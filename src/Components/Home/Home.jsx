@@ -3,11 +3,13 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className='container home-container'>
-      <header>
-        <h1 className='title'>Home</h1>
-      </header>
-    </div>
+    <section>
+      <div className='container home-container'>
+        <header>
+          <h1>Home</h1>
+        </header>
+      </div>
+    </section>
   );
 };
 

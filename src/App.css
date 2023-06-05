@@ -23,27 +23,27 @@ li {
   --pra-font: 0.7rem;
 }
 
-.container {
+section {
   background: var(--color-main);
 }
 
 /* Mobile Responsive Design for Teblet */
 @media (max-width: 1024px) {
   .container {
-    background: red;
+    width: 100%;
   }
 }
 
+/* Styles for regular-sized mobile devices */
 @media (max-width: 768px) {
-  /* Styles for regular-sized mobile devices */
   .container {
-    background: blue;
+    width: 100%;
   }
 }
 
+/* Styles for small-sized mobile devices */
 @media (max-width: 480px) {
-  /* Styles for small-sized mobile devices */
   .container {
-    background: green;
+    width: 100%;
   }
 }
