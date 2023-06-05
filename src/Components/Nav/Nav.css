@@ -6,4 +6,8 @@ body {
 .nav {
   display: flex;
   position: absolute;
+  background-color: red;
+  right: 0;
+  position: fixed;
+  flex-direction: column;
 }

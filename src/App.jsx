@@ -7,12 +7,8 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>Portfolio is Comming Soon!!</h1>
-      <div>
-        <h2>Components</h2>
-        <Home />
-        <Nav />
-      </div>
+      <Home />
+      <Nav />
     </>
   );
 }
