@@ -10,4 +10,6 @@ body {
   right: 0;
   position: fixed;
   flex-direction: column;
+  z-index: 100;
+  bottom: calc(40%);
 }

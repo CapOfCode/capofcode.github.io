@@ -1,13 +1,49 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1 {
-  color: black;
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
-div {
-  color: black;
+li {
+  list-style: none;
+}
+
+:root {
+  --color-main: #272343;
+  --color-sub: #ffffff;
+  --color-sub-light: #e3f6f5;
+  --color-main-light: #bae8e8;
+  --main-font: 2rem;
+  --sub-font: 1rem;
+  --pra-font: 0.7rem;
+}
+
+.container {
+  background: var(--color-main);
+}
+
+/* Mobile Responsive Design for Teblet */
+@media (max-width: 1024px) {
+  .container {
+    background: red;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles for regular-sized mobile devices */
+  .container {
+    background: blue;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for small-sized mobile devices */
+  .container {
+    background: green;
+  }
 }

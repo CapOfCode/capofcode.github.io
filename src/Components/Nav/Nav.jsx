@@ -4,11 +4,12 @@ import "./Nav.css";
 const Nav = () => {
   return (
     <div className='nav'>
-      <h1>Nav</h1>
-      <h1>Nav</h1>
-      <h1>Nav</h1>
-      <h1>Nav</h1>
-      <h1>Nav</h1>
+      <a href='#Home'>Home</a>
+      <a href='#Home'>Home</a>
+      <a href='#Home'>Home</a>
+      <a href='#Home'>Home</a>
+      <a href='#Home'>Home</a>
+      <a href='#Home'>Home</a>
     </div>
   );
 };

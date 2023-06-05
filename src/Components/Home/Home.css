@@ -2,5 +2,13 @@
   color: red;
 }
 .home-container {
-  background-color: black;
+  background-color: blue;
+}
+
+p {
+  font-size: var(--pra-font);
+}
+
+h1 {
+  font-size: var(--main-font);
 }
