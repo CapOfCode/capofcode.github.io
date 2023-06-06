@@ -5,11 +5,18 @@ body {
 
 .nav {
   display: flex;
-  position: absolute;
-  background-color: red;
-  right: 0;
   position: fixed;
   flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  align-items: flex-end; /* Align the content to the right */
   z-index: 100;
-  bottom: calc(40%);
+  bottom: 50%; /* Adjust the desired vertical position */
+  transform: translateY(50%); /* Vertically center the element */
+  right: 0.5rem;
+}
+
+.nav li {
+  margin: 1rem 0 1rem 1rem;
+  padding: 10px;
+  background-color: red;
 }

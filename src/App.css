@@ -25,6 +25,11 @@ li {
 
 section {
   background: var(--color-main);
+  height: 50vh;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Mobile Responsive Design for Teblet */
