@@ -1,3 +1,4 @@
-.project-container {
-  background: var(--color-sub);
+#Projects {
+  background: var(--color-white);
+  color: var(--color-black);
 }

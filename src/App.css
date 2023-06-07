@@ -24,13 +24,9 @@ li {
   --color-white: #fff;
   --color-sub-light: #e3f6f5;
   --color-main-light: #bae8e8;
-  --main-font: 2rem;
-  --sub-font: 1rem;
-  --pra-font: 0.7rem;
 }
 
 section {
-  background: var(--color-main);
   height: 100vh;
 }
 
@@ -40,7 +36,7 @@ html {
 
 .container {
   width: 100%;
-  padding: 6%;
+  padding: 1rem 7rem;
 }
 
 /* Mobile Responsive Design for Teblet */
