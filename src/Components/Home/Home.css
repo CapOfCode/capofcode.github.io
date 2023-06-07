@@ -2,3 +2,50 @@
   background: var(--color-grey);
   color: var(--color-white);
 }
+
+.header-socials {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 13rem;
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: grey;
+  padding: 0.3rem;
+  color: var(--color-white);
+  font-size: 0.9rem;
+  border-radius: 1rem;
+}
+
+.header-socials::after {
+  content: "";
+  width: 2px;
+  height: 4rem;
+  background: var(--color-white);
+}
+
+.scroll-down {
+  font-family: "Poppins", sans-serif;
+  transform: rotate(90deg);
+  bottom: 7rem;
+  position: absolute;
+  left: 4.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-down a span {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-white);
+  font-size: 1rem;
+}
