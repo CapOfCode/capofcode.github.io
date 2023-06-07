@@ -31,11 +31,16 @@ li {
 
 section {
   background: var(--color-main);
-  height: 50vh;
+  height: 100vh;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  padding: 6%;
 }
 
 /* Mobile Responsive Design for Teblet */

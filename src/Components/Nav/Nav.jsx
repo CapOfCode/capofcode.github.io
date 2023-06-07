@@ -9,6 +9,9 @@ import "./Nav.css";
 const Nav = () => {
   return (
     <nav>
+      <div className='logo'>
+        <h2>CapOfCode</h2>
+      </div>
       <a href='#Home'>
         <span className='laptop-menu'>Home</span>
         <span className='mobile-menu'>

@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,8 +14,8 @@ nav {
   flex-wrap: wrap;
   padding: 0.7rem;
   background: transparent;
-  backdrop-filter: blur(15px);
-  background-color: #25252581;
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -31,23 +37,37 @@ nav a {
 .mobile-menu {
   display: none;
   margin: 0 0.3rem;
-  border: 1px solid black;
   background: var(--color-black);
   padding: 0.3rem 0.5rem;
   border-radius: 0.5rem;
 }
 
-/* Mobile Responsive Design for Teblet */
+/* Nav Responsive Design for Large Screen */
+@media (min-width: 1025px) {
+  nav {
+    background: rgba(0, 0, 0, 0.801);
+    width: 100%;
+    border-radius: 0;
+    top: 0;
+    height: fit-content;
+    color: white;
+  }
+  nav a {
+    margin: 0rem;
+    color: var(--color-white);
+  }
+}
+
+/* Mobile Responsive Design for Tab and Large Screen */
 
 @media (max-width: 1024px) and (min-width: 680px) {
   nav {
     width: max-content;
-    background: red;
     flex-direction: column;
     transform: translateY(-50%);
     align-items: center;
     bottom: 0;
-    right: 0;
+    right: 0.5rem;
     left: unset;
     z-index: 160;
   }
@@ -57,7 +77,12 @@ nav a {
   }
 }
 
+/* Mobile Responsive Design for Teblet */
 @media (max-width: 1024px) {
+  .logo {
+    display: none;
+  }
+
   .laptop-menu {
     display: none;
   }
