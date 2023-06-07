@@ -10,26 +10,26 @@ const Home = () => {
     <section id='Home'>
       <div className='container home-container'>
         <header>
-          <h1>Home</h1>
+          <h1>Home Section</h1>
 
-          <div className='header-socials'>
-            <a href='##' target='_blank'>
-              <BsLinkedin />
-            </a>
-            <a href='##' target='_blank'>
-              <FaGithubSquare />
-            </a>
-            <a href='##' target='_blank'>
-              <BsYoutube />
-            </a>
-            <a href='##' target='_blank'>
-              <FaTwitterSquare />
-            </a>
-          </div>
-          <div className='scroll-down'>
-            <a href='##'>
-              <span>Scrol Down &raquo; &raquo;</span>
-            </a>
+          <div className='icon-and-text'>
+            <div className='header-socials'>
+              <a href='##' target='_blank'>
+                <BsLinkedin />
+              </a>
+              <a href='##' target='_blank'>
+                <FaGithubSquare />
+              </a>
+              <a href='##' target='_blank'>
+                <BsYoutube />
+              </a>
+              <a href='##' target='_blank'>
+                <FaTwitterSquare />
+              </a>
+            </div>
+            <div className='scroll-down'>
+              <a href='##'>Scrol Down &raquo; &raquo;</a>
+            </div>
           </div>
         </header>
       </div>

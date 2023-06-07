@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-  z-index: 10;
+  z-index: 1;
   width: 95%;
   flex-wrap: wrap;
   padding: 0.7rem;
@@ -52,7 +52,7 @@ nav a {
 @media (min-width: 1025px) {
   nav {
     width: 100%;
-    padding: 0.7rem 4rem;
+    padding: 0.7rem 3%;
     filter: drop-shadow(5px 5px 10px #000);
     background: rgba(0, 0, 0, 0.801);
     width: 100%;
