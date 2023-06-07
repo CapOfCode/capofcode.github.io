@@ -13,9 +13,15 @@ li {
   list-style: none;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
-  --color-main: #272343;
-  --color-sub: #ffffff;
+  --color-black: #020202;
+  --color-grey: #252525;
+  --color-yello: #ffb800;
+  --color-white: #fff;
   --color-sub-light: #e3f6f5;
   --color-main-light: #bae8e8;
   --main-font: 2rem;
@@ -34,21 +40,21 @@ html {
 
 /* Mobile Responsive Design for Teblet */
 @media (max-width: 1024px) {
-  .container {
-    width: 100%;
+  .mobile-menu {
+    display: block;
   }
 }
 
 /* Styles for regular-sized mobile devices */
 @media (max-width: 768px) {
-  .container {
-    width: 100%;
+  .mobile-menu {
+    display: block;
   }
 }
 
 /* Styles for small-sized mobile devices */
 @media (max-width: 480px) {
-  .container {
-    width: 100%;
+  .mobile-menu {
+    display: block;
   }
 }

@@ -3,20 +3,88 @@ body {
   padding: 0;
 }
 
-.nav {
+nav {
+  width: 95%;
+  flex-wrap: wrap;
+  padding: 0.7rem;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  background-color: #25252581;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   position: fixed;
-  flex-direction: column;
-  justify-content: center; /* Vertically center the content */
-  align-items: flex-end; /* Align the content to the right */
-  z-index: 100;
-  bottom: 50%; /* Adjust the desired vertical position */
-  transform: translateY(50%); /* Vertically center the element */
-  right: 0.5rem;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 1rem;
+}
+nav a {
+  margin: 0 0.3rem;
+  color: var(--color-yello);
 }
 
-.nav li {
-  margin: 1rem 0 1rem 1rem;
-  padding: 10px;
-  background-color: red;
+.laptop-menu {
+  display: inline-block;
+}
+
+.mobile-menu {
+  display: none;
+  margin: 0 0.3rem;
+  border: 1px solid black;
+  background: var(--color-black);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Mobile Responsive Design for Teblet */
+
+@media (max-width: 1024px) and (min-width: 680px) {
+  nav {
+    width: max-content;
+    background: red;
+    flex-direction: column;
+    transform: translateY(-50%);
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    left: unset;
+    z-index: 160;
+  }
+  nav a {
+    margin: 0.5rem 0;
+    color: var(--color-yello);
+  }
+}
+
+@media (max-width: 1024px) {
+  .laptop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: inline-block;
+  }
+}
+
+/* Styles for regular-sized mobile devices */
+@media (max-width: 768px) {
+  .laptop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: inline-block;
+  }
+}
+
+/* Styles for small-sized mobile devices */
+@media (max-width: 480px) {
+  .laptop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: inline-block;
+  }
 }
