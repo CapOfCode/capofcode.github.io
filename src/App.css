@@ -44,21 +44,12 @@ html {
 
 /* Mobile Responsive Design for Teblet */
 @media (max-width: 1024px) {
-  .mobile-menu {
-    display: block;
-  }
 }
 
 /* Styles for regular-sized mobile devices */
 @media (max-width: 768px) {
-  .mobile-menu {
-    display: block;
-  }
 }
 
 /* Styles for small-sized mobile devices */
 @media (max-width: 480px) {
-  .mobile-menu {
-    display: block;
-  }
 }

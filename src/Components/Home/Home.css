@@ -1,7 +1,41 @@
 #Home {
-  background: var(--color-grey);
+  background: var(--color-black);
   color: var(--color-white);
 }
+
+/* Home Section Design*/
+
+.head-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(50%);
+}
+
+.profile-img-div {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-img {
+  width: 100%;
+}
+
+div h2 {
+  font-size: 1.8rem;
+}
+
+h2 span {
+  color: var(--color-yello);
+}
+
+p span {
+  color: var(--color-yello);
+}
+
+/* Socail Media and Scrol Down Design */
 
 .icon-and-text {
   display: flex;
@@ -45,4 +79,19 @@
   font-family: "Poppins", sans-serif;
   color: var(--color-white);
   font-size: 1rem;
+}
+
+/* Mobile Responsive Design for Teblet */
+@media (max-width: 1024px) {
+  .icon-and-text {
+    display: none;
+  }
+}
+
+/* Styles for regular-sized mobile devices */
+@media (max-width: 768px) {
+}
+
+/* Styles for small-sized mobile devices */
+@media (max-width: 480px) {
 }
