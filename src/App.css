@@ -25,6 +25,7 @@ li {
   --color-white: #fff;
   --color-sub-light: #e3f6f5;
   --color-main-light: #bae8e8;
+  --transition-main: all ease 0.3s;
 }
 
 section {

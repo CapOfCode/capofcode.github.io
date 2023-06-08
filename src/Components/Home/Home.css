@@ -20,10 +20,10 @@
 .header-socials a {
   display: flex;
   align-items: center;
-  background: grey;
+  background: rgba(97, 97, 97, 0.884);
   padding: 0.3rem;
   color: var(--color-white);
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   border-radius: 1rem;
 }
 

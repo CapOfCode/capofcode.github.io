@@ -30,6 +30,9 @@ nav {
 .logo {
   width: 400px;
 }
+.logo h2 {
+  cursor: pointer;
+}
 
 nav a {
   margin: 0 0.3rem;
@@ -46,6 +49,7 @@ nav a {
   background: var(--color-black);
   padding: 0.3rem 0.5rem;
   border-radius: 0.5rem;
+  transition: var(--transition-main);
 }
 
 /* Nav Responsive Design for Large Screen */
@@ -64,6 +68,25 @@ nav a {
   nav a {
     margin: 0rem;
     color: var(--color-white);
+    position: relative;
+  }
+
+  nav a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--color-yello);
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: var(--transition-main);
+  }
+
+  nav a:hover::after {
+    width: 100%;
+  }
+  nav a.active::after {
+    width: 100%;
   }
 }
 
@@ -98,6 +121,17 @@ nav a {
 
   .mobile-menu {
     display: inline-block;
+  }
+
+  .mobile-menu:hover {
+    background: var(--color-white);
+    font-size: 1.5rem;
+    transform: scale(1.2);
+  }
+  .mobile-menu.active {
+    background: var(--color-white);
+    font-size: 1.5rem;
+    transform: scale(1.2);
   }
 }
 
