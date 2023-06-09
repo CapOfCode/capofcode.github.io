@@ -6,6 +6,7 @@
 
 .contant {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 2fr;
 }
 
@@ -15,6 +16,7 @@
   overflow: hidden;
   border-radius: 50%;
 }
+
 img {
   width: 100%;
   height: 100%;
@@ -26,6 +28,7 @@ img {
   align-items: center;
   gap: 1.5rem;
 }
+
 .text-container {
   font-family: Poppins;
   font-weight: 300;
@@ -38,6 +41,7 @@ img {
   display: flex;
   gap: 2rem;
 }
+
 /* Tablet Responsive Design */
 @media (max-width: 1024px) {
   #About {
@@ -45,8 +49,9 @@ img {
   }
 
   .contant {
-    display: grid;
+    width: 100%;
     grid-template-columns: 1fr;
+    margin: auto;
   }
 
   .image-container {
@@ -54,7 +59,7 @@ img {
   }
 
   .text-container {
-    width: 95%;
+    width: 100%;
     margin: auto;
     text-align: justify;
   }
@@ -69,8 +74,9 @@ img {
 /* Mobile Responsive Design */
 @media (max-width: 768px) {
   .content {
-    width: 95%;
     margin: auto;
+    padding: 2rem;
+    text-align: center; /* Center the content horizontally */
   }
 
   .image-container {
@@ -78,7 +84,6 @@ img {
   }
 
   .text-container {
-    width: 95%;
     margin: auto;
     text-align: justify;
   }
@@ -87,8 +92,15 @@ img {
     margin-top: 2rem;
     margin: auto;
   }
+
   .btn-icon {
     display: none;
+  }
+  button {
+    border-radius: 0.5rem;
+    padding: 0.8rem 0.4rem;
+    width: 8rem;
+    gap: 0.6rem;
   }
 }
 

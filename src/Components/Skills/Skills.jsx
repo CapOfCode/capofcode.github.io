@@ -6,7 +6,7 @@ import "./Skills.css";
 const Skills = () => {
   return (
     <section id='Skills'>
-      <div className='container skills-container'>
+      <div className='skills-container'>
         <h2 className='title'>Skills</h2>
         <div className='skill-card-container'>
           <div className='Skills-Cards'>
