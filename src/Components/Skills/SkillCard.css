@@ -11,8 +11,15 @@
 }
 
 .project-count {
-  transform: translateY(200%);
+  transform: translateY(202%);
   z-index: -1;
+}
+.projects-done {
+  font-size: 0.8rem;
+  color: var(--color-yello);
+}
+.skill-name {
+  font-size: 1.1rem;
 }
 
 .icon-card {
@@ -36,10 +43,7 @@
 }
 
 .card:hover .icon-card {
-  transform: scale(0.5) translateY(-100%);
-}
-
-@media (max-width: 1024px) and (max-width: 668px) {
+  transform: scale(0.5) translateY(-94%);
 }
 
 /* Mobile Responsive Design for Teblet */
@@ -56,7 +60,7 @@
     transform: translateY(-52%);
   }
   .card:hover .icon-card {
-    transform: scale(0.5) translateY(-115%);
+    transform: scale(0.5) translateY(-102%);
   }
   .project-count {
     transform: translateY(160%);
@@ -80,12 +84,15 @@
     transform: translateY(-60%);
   }
   .project-count {
-    transform: translateY(140%);
+    transform: translateY(125%);
     z-index: -1;
   }
   .card-image {
     padding: 1.2rem;
     justify-content: center;
+  }
+  .card:hover .icon-card {
+    transform: scale(0.5) translateY(-113%);
   }
 }
 
