@@ -86,6 +86,9 @@ p span {
   .icon-and-text {
     display: none;
   }
+  .home-container {
+    margin: auto;
+  }
 }
 
 /* Styles for regular-sized mobile devices */

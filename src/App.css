@@ -93,12 +93,21 @@ button:hover p {
 
 /* Mobile Responsive Design for Teblet */
 @media (max-width: 1024px) {
+  .container {
+    width: 85%;
+  }
 }
 
 /* Styles for regular-sized mobile devices */
 @media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
 }
 
 /* Styles for small-sized mobile devices */
 @media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
 }
