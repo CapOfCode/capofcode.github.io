@@ -6,10 +6,10 @@ const SkillCard = (props) => {
   return (
     <div className='card'>
       <h1>
-        <span className='skill-name'>Javascript</span>
+        <span className='skill-name'>{props.skillName}</span>
       </h1>
       <h1 className='project-count'>
-        <span className='projects-done'>Project: 20</span>
+        <span className='projects-done'>Project: {props.projectCount}</span>
       </h1>
       <div className='icon-card'>
         <div className='card-image'>
