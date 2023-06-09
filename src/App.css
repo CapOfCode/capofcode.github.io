@@ -32,7 +32,7 @@ li {
 section {
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  padding: 6% 6%;
+  padding: 3rem 5rem;
 }
 
 html {
@@ -46,7 +46,7 @@ html {
 .title {
   text-align: center;
   color: var(--color-yello);
-  margin-bottom: 3rem;
+  margin: 1.5rem;
 }
 
 /* Button */
@@ -94,21 +94,24 @@ button:hover p {
 
 /* Mobile Responsive Design for Teblet */
 @media (max-width: 1024px) {
-  .container {
-    width: 85%;
+  section {
+    margin: auto;
+    padding: 2.5rem 4rem;
   }
 }
 
 /* Styles for regular-sized mobile devices */
 @media (max-width: 768px) {
-  .container {
-    width: 90%;
+  section {
+    margin: auto;
+    padding: 2.5rem 4rem;
   }
 }
 
 /* Styles for small-sized mobile devices */
 @media (max-width: 480px) {
-  .container {
-    width: 95%;
+  section {
+    margin: auto;
+    padding: 2.5rem 4rem;
   }
 }

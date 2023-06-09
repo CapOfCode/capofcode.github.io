@@ -1,4 +1,74 @@
 #Skills {
-  background: var(--color-grey);
+  background: var(--color-black);
   color: var(--color-white);
+  height: 110vh;
+}
+
+.Skills-Cards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  row-gap: 3rem;
+}
+
+.skill-card-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+/* Mobile Responsive Design for Teblet */
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .Skills-Cards {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    row-gap: 3rem;
+  }
+}
+
+/* Styles for regular-sized mobile devices */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .Skills-Cards {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    row-gap: 3rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .container {
+    width: 100%;
+  }
+  .Skills-Cards {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    row-gap: 3rem;
+  }
+}
+
+/* Styles for small-sized mobile devices */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  .Skills-Cards {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    row-gap: 3rem;
+  }
 }

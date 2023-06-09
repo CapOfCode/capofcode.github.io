@@ -1,7 +1,7 @@
 #About {
   background: var(--color-grey);
   color: var(--color-white);
-  height: auto;
+  height: 100vh;
 }
 
 .contant {
@@ -40,6 +40,10 @@ img {
 }
 /* Tablet Responsive Design */
 @media (max-width: 1024px) {
+  #About {
+    height: auto;
+  }
+
   .contant {
     display: grid;
     grid-template-columns: 1fr;
