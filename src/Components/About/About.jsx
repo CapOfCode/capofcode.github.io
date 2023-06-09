@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import aboutImage from "./images/profile-photo.jpg";
 import { BsDownload } from "react-icons/bs";
 import { AiFillMessage } from "react-icons/ai";
@@ -14,13 +14,17 @@ const About = () => {
           </div>
           <div className='text-container'>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-              quam sed repellat vel minus illo autem corporis officia explicabo
-              ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-              aspernatur? Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit. Ipsa quam sed repellat vel minus illo autem corporis officia
-              explicabo ex? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ipsa, aspernatur?
+              👋 Greetings! I'm a passionate front-end web developer,
+              well-versed in the enchanting arts of HTML, CSS, and JavaScript.
+              Currently, I'm on a thrilling quest to master the mystical MERN
+              stack (MongoDB, Express.js, React.js, Node.js). Together, let's
+              embark on a journey to create captivating web experiences! ✨
+              <br />
+              <br />✨ In the realm of coding, I am a sorcerer of pixels and a
+              maestro of creativity. With a wave of my keyboard, I conjure
+              digital wonders that will leave you spellbound! Let's bring your
+              ideas to life and sprinkle a touch of magic to make your web
+              dreams come true! 🌟
             </p>
             <div className='button-div'>
               <a
