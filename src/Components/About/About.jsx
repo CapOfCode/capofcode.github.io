@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import aboutImage from "./images/profile-photo.jpg";
 import { BsDownload } from "react-icons/bs";
 import { AiFillMessage } from "react-icons/ai";
@@ -23,17 +23,20 @@ const About = () => {
               elit. Ipsa, aspernatur?
             </p>
             <div className='button-div'>
-              <button>
-                <p>Download CV</p>
-                <span>
-                  <BsDownload />
-                </span>
-              </button>
-              <button>
-                <p>Contact Me</p>
-                <span>
-                  <AiFillMessage />
-                </span>
+              <a
+                href='https://docs.google.com/document/d/1kj6NViwHd5_0jWXYqgRCDa-SU_48HE0Vz-gz6DNTPVQ/export?format=pdf'
+                download='Resume of Rashed.pdf'>
+                <button>
+                  <p>DOWNLOAD CV</p>
+                  <BsDownload className='btn-icon' />
+                </button>
+              </a>
+              <button
+                onClick={() => {
+                  window.location.href = "#Contact";
+                }}>
+                <p>CONTACT ME</p>
+                <AiFillMessage className='btn-icon' />
               </button>
             </div>
           </div>

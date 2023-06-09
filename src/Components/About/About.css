@@ -28,8 +28,9 @@ img {
 }
 
 .button-div {
+  margin-top: 2rem;
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 /* Mobile Responsive Design for Teblet */

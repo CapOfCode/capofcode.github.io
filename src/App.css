@@ -51,29 +51,44 @@ html {
 /* Button */
 
 button {
-  --bg: #000;
-  --hover-bg: #fff;
-  --hover-text: #000;
   color: var(--color-yello);
-  border: 1px solid var(--bg);
+  border: 1px solid #000;
   border-radius: 0.5rem;
-  padding: 0.8em 2em;
-  background: var(--bg);
+  padding: 0.8rem;
+  background: #000;
   transition: 0.2s;
+  width: 10rem;
+  margin: auto;
   display: flex;
   gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 button:hover {
-  color: var(--hover-text);
+  color: #000;
   transform: translate(-0.25rem, -0.25rem);
-  background: var(--hover-bg);
-  box-shadow: 0.25rem 0.25rem var(--bg);
+  background: #fff;
+  box-shadow: 0.25rem 0.25rem #000;
 }
 
 button:active {
-  transform: translate(0);
+  transform: scale(1.1);
   box-shadow: none;
+}
+
+button:hover .btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 1rem;
+}
+
+button:hover p {
+  display: none;
+  transition: all 1s;
 }
 
 /* Mobile Responsive Design for Teblet */
