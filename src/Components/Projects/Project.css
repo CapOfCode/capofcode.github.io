@@ -1,4 +1,26 @@
 #Projects {
-  background: var(--color-white);
-  color: var(--color-black);
+  background: var(--color-grey);
+  color: var(--color-white);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Mobile Responsive Design for Teblet */
+@media (max-width: 1024px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+
+/* Styles for regular-sized mobile devices */
+@media (max-width: 768px) {
+}
+
+/* Styles for small-sized mobile devices */
+@media (max-width: 480px) {
 }
