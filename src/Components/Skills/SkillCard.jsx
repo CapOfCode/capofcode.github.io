@@ -5,7 +5,7 @@ const SkillCard = (props) => {
   const { image } = props;
   return (
     <div className='card'>
-      <h1>
+      <h1 className='skill-name-title'>
         <span className='skill-name'>{props.skillName}</span>
       </h1>
       <h1 className='project-count'>

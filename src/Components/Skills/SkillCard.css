@@ -19,7 +19,7 @@
   color: var(--color-yello);
 }
 .skill-name {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .icon-card {
@@ -82,6 +82,10 @@
     height: 120px;
     transform: translateY(-60%);
   }
+  .skill-name {
+    font-size: 0.9rem;
+  }
+
   .project-count {
     transform: translateY(125%);
     z-index: -1;
@@ -104,6 +108,12 @@
   .icon-card {
     width: 110px;
     height: 110px;
+  }
+  .skill-name {
+    font-size: 0.8rem;
+  }
+  .skill-name-title {
+    transform: translateY(-15%);
   }
   .card-image {
     padding: 1rem;
