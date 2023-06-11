@@ -45,14 +45,14 @@ const ProjectCard = ({
           <h1 className='project-title-text'>{title}</h1>
         </div>
         <div className='cta-button'>
-          <a href={demoLink}>
+          <a href={demoLink} target='_blank'>
             <p>
-              <LuView className='btn-icon' />
+              <LuView className='btn-icon-view' />
               Demo
             </p>
           </a>
 
-          <a href={codeLink}>
+          <a href={codeLink} target='_blank'>
             <p>
               <AiFillGithub className='btn-icon-git' />
               Code

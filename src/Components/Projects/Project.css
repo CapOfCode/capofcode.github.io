@@ -25,19 +25,26 @@
 }
 
 .controle-btn {
-  width: 80%;
+  width: 40%;
   display: flex;
   justify-content: space-around;
 }
 
 .swiper-button {
   display: flex;
-  background: white;
+  background: var(--color-yello);
   padding: 0.3rem;
-  border-radius: 0.5rem;
+  border-radius: 50%;
   color: black;
+  cursor: pointer;
+}
+.swiper-button-prev:active {
+  transform: translateX(-2px) translateY(-32px);
 }
 
+.swiper-button-next:active {
+  transform: translateX(2px) translateY(-32px);
+}
 .swiper-button-next {
   transform: translateY(-32px);
   z-index: 2;
@@ -49,7 +56,7 @@
 }
 
 .swiper-pagination {
-  background: yellow;
+  background: transparent;
 }
 
 .swiper-slide {
@@ -70,12 +77,27 @@
     grid-template-columns: 1fr;
     gap: 4rem;
   }
+  .controle-btn {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /* Styles for regular-sized mobile devices */
 @media (max-width: 768px) {
+  .controle-btn {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /* Styles for small-sized mobile devices */
 @media (max-width: 480px) {
+  .controle-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
