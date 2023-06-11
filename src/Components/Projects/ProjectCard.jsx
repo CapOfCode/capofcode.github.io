@@ -12,7 +12,7 @@ const ProjectCard = ({
   image,
 }) => {
   return (
-    <div class='project-card'>
+    <div className='project-card'>
       <div className='project-image'>
         <div className='overly-content'>
           <h1>Description</h1>

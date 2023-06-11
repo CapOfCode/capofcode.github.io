@@ -1,15 +1,43 @@
 #Projects {
   background: var(--color-grey);
   color: var(--color-white);
+  height: 120vh;
 }
 
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.mySwiper {
+  height: 435px;
+  width: 10%;
+  overflow: hidden !important;
+}
+.swiper {
+  width: 72%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.slider-controler {
+  background-color: red;
+}
+
+.swiper-slide {
+  flex-shrink: 5 !important;
+  width: 100% !important;
+  height: 0 !important;
+}
+
+@media (max-width: 500px) {
+}
 
 /* Mobile Responsive Design for Teblet */
 @media (max-width: 1024px) {
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .card-container {
     display: grid;
     grid-template-columns: 1fr;
