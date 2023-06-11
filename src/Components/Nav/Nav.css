@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-  z-index: 1;
+  z-index: 50000;
   width: 95%;
   flex-wrap: wrap;
   padding: 0.7rem;
