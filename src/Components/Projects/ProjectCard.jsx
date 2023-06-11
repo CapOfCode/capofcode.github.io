@@ -1,7 +1,8 @@
-import React from "react";
+import { useState } from "react";
 import "./ProjectCard.css";
 import { LuView } from "react-icons/lu";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiOutlineFullscreenExit } from "react-icons/ai";
+import { BiHelpCircle } from "react-icons/bi";
 
 const ProjectCard = ({
   title,
@@ -11,10 +12,20 @@ const ProjectCard = ({
   codeLink,
   image,
 }) => {
+  const [showContent, setShowContent] = useState(false);
+  const DisplayIcon = showContent ? AiOutlineFullscreenExit : BiHelpCircle;
+
+  const showDetails = () => {
+    setShowContent((prevShowContent) => !prevShowContent);
+  };
+
   return (
     <div className='project-card'>
+      <div className='hover-details' onClick={showDetails}>
+        <DisplayIcon />
+      </div>
       <div className='project-image'>
-        <div className='overly-content'>
+        <div className={`overly-content ${showContent ? "active" : ""}`}>
           <h1>Description</h1>
           <p>{description}</p>
         </div>

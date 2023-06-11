@@ -14,7 +14,7 @@ import "swiper/css/pagination";
 // import "swiper/css/navigation";
 
 // Import required modules
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import { EffectCoverflow, Pagination, Navigation, Mousewheel } from "swiper";
 
 const Project = () => {
   const projectData = [
@@ -79,6 +79,7 @@ const Project = () => {
           grabCursor={false}
           loop={true}
           slidesPerView={"auto"}
+          mousewheel={true}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -92,7 +93,7 @@ const Project = () => {
             nextEl: ".swiper-button-next",
             clickable: true,
           }}
-          modules={[EffectCoverflow, Pagination, Navigation]}
+          modules={[EffectCoverflow, Pagination, Mousewheel, Navigation]}
           className='mySwiper'>
           {projectData.map((project, index) => (
             <SwiperSlide key={index} className='swiper-slide'>
