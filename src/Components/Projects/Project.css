@@ -9,7 +9,7 @@
   grid-template-columns: repeat(3, 1fr);
 }
 .mySwiper {
-  height: 435px;
+  height: 450px;
   width: 10%;
   overflow: hidden !important;
 }
@@ -19,16 +19,43 @@
   padding-bottom: 50px;
 }
 .slider-controler {
-  background-color: red;
+  background: transparent;
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+.controle-btn {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.swiper-button {
+  display: flex;
+  background: white;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  color: black;
+}
+
+.swiper-button-next {
+  transform: translateY(-32px);
+  z-index: 2;
+}
+
+.swiper-button-prev {
+  transform: translateY(-32px);
+  z-index: 2;
+}
+
+.swiper-pagination {
+  background: yellow;
 }
 
 .swiper-slide {
   flex-shrink: 5 !important;
   width: 100% !important;
   height: 0 !important;
-}
-
-@media (max-width: 500px) {
 }
 
 /* Mobile Responsive Design for Teblet */

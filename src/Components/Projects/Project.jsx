@@ -100,15 +100,16 @@ const Project = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-
         <div className='slider-controler'>
-          <div className='swiper-button-prev swiper-button'>
-            <AiOutlineArrowLeft className='arrow-back-outline' />
+          <div className='controle-btn'>
+            <div className='swiper-button-prev swiper-button'>
+              <AiOutlineArrowLeft className='arrow-back-outline' />
+            </div>
+            <div className='swiper-button-next swiper-button'>
+              <AiOutlineArrowRight className='arrow-forward-outline' />
+            </div>
+            <div className='swiper-pagination'></div>
           </div>
-          <div className='swiper-button-next swiper-button'>
-            <AiOutlineArrowRight className='arrow-forward-outline' />
-          </div>
-          <div className='swiper-pagination'></div>
         </div>
       </div>
     </section>
