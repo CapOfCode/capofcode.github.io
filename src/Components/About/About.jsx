@@ -30,12 +30,13 @@ const About = () => {
               <a
                 href='https://docs.google.com/document/d/1kj6NViwHd5_0jWXYqgRCDa-SU_48HE0Vz-gz6DNTPVQ/export?format=pdf'
                 download='Resume of Rashed.pdf'>
-                <button>
+                <button className='btn-btn'>
                   <p>DOWNLOAD CV</p>
                   <BsDownload className='btn-icon' />
                 </button>
               </a>
               <button
+                className='btn-btn'
                 onClick={() => {
                   window.location.href = "#Contact";
                 }}>

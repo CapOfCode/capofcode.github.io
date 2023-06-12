@@ -52,7 +52,7 @@ html {
 
 /* Button */
 
-button {
+.btn-btn {
   color: var(--color-yello);
   border: 1px solid #000;
   border-radius: 0.5rem;
@@ -68,19 +68,19 @@ button {
   text-align: center;
 }
 
-button:hover {
+.btn-btn:hover {
   color: #000;
   transform: translate(-0.25rem, -0.25rem);
   background: #fff;
   box-shadow: 0.25rem 0.25rem #000;
 }
 
-button:active {
+.btn-btn:active {
   transform: scale(1.1);
   box-shadow: none;
 }
 
-button:hover .btn-icon {
+.btn-btn:hover .btn-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +88,7 @@ button:hover .btn-icon {
   font-size: 1rem;
 }
 
-button:hover p {
+.btn-btn:hover p {
   display: none;
   transition: all 1s;
 }
@@ -107,7 +107,7 @@ button:hover p {
     margin: auto;
     padding: 2.5rem 4rem;
   }
-  button {
+  .btn-btn {
     border-radius: 0.5rem;
     padding: 0.8rem 0.4rem;
     width: 8rem;

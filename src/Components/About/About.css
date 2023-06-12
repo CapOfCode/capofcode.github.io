@@ -99,7 +99,7 @@ img {
   .btn-icon {
     display: none;
   }
-  button {
+  .btn-btn {
     border-radius: 0.5rem;
     padding: 0.8rem 0.4rem;
     width: 8rem;
@@ -110,7 +110,6 @@ img {
 /* Styles for small-sized mobile devices */
 @media (max-width: 480px) {
   .button-div {
-    width: 100%;
     margin-top: 2rem;
     margin: auto;
   }
