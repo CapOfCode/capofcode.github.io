@@ -95,7 +95,10 @@ const Contact = () => {
                 required></textarea>
               <div className='cta-div'>
                 <div>
-                  <button className='btn-contact' type='submit' value='Send'>
+                  <button
+                    className='btn-contact btn-btn'
+                    type='submit'
+                    value='Send'>
                     {successMessage === "Send Message" && (
                       <div>
                         <BsFillSendFill className='btn-icon-contact' />

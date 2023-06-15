@@ -1,3 +1,4 @@
-footer {
+#footer {
   background: var(--color-sub);
+  height: 200px !important;
 }

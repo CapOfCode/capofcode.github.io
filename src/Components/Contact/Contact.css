@@ -142,6 +142,9 @@ textarea {
   .contact-container {
     padding: 0 2%;
   }
+  #Contact {
+    height: auto;
+  }
 }
 
 /* Styles for regular-sized mobile devices */
@@ -163,35 +166,41 @@ textarea {
     flex-direction: row;
     padding: 0.1rem 0.1rem;
   }
+
   .social-main {
-    font-size: 0.8rem;
+    display: none;
+  }
+  .social-secend {
+    display: none;
+  }
+  .whatsapp:hover {
+    scale: 0.9;
   }
 
-  .whatsapp:hover .social-secend {
-    font-size: 0.8rem;
+  .email-me:hover {
+    scale: 0.9;
   }
 
-  .email-me:hover .social-secend {
-    font-size: 0.8rem;
+  .facebook:hover {
+    scale: 0.9;
+  }
+  .send-icon {
+    font-size: 1.5rem;
   }
 
-  .facebook:hover .social-secend {
-    font-size: 0.8rem;
+  input {
+    height: 3rem;
   }
-
   input,
   textarea {
     width: 98%;
-  }
-  .send-icon {
-    font-size: 0.8rem;
   }
 }
 
 /* Styles for small-sized mobile devices */
 @media (max-width: 480px) {
   .social-contact-btn {
-    width: 90%;
+    width: 100px;
     height: 25px;
     padding: 0.05rem 0.5rem;
     display: flex;
@@ -208,21 +217,23 @@ textarea {
   }
 
   .social-main {
-    font-size: 0.7rem;
+    display: none;
+  }
+  .social-secend {
+    display: none;
+  }
+  .whatsapp:hover {
+    scale: 0.9;
   }
 
-  .whatsapp:hover .social-secend {
-    font-size: 0.7rem;
+  .email-me:hover {
+    scale: 0.9;
   }
 
-  .email-me:hover .social-secend {
-    font-size: 0.7rem;
-  }
-
-  .facebook:hover .social-secend {
-    font-size: 0.7rem;
+  .facebook:hover {
+    scale: 0.9;
   }
   .send-icon {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }

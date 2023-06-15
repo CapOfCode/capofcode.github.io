@@ -25,16 +25,16 @@ const Home = () => {
 
           <div className='icon-and-text'>
             <div className='header-socials'>
-              <a href='##' target='_blank'>
+              <a href='https://www.linkedin.com/in/capofcode/' target='_blank'>
                 <BsLinkedin />
               </a>
-              <a href='##' target='_blank'>
+              <a href='https://github.com/CapOfCode' target='_blank'>
                 <FaGithubSquare />
               </a>
-              <a href='##' target='_blank'>
+              <a href='https://www.youtube.com/@capofcode' target='_blank'>
                 <BsYoutube />
               </a>
-              <a href='##' target='_blank'>
+              <a href='https://twitter.com/capofcode' target='_blank'>
                 <FaTwitterSquare />
               </a>
             </div>
