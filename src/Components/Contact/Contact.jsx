@@ -52,14 +52,14 @@ const Contact = () => {
           <div className='social-contact'>
             <h1 className='contact-title'> Social Media</h1>
             <div className='whatsapp social-contact-btn'>
-              <a href='#'>
+              <a href='https://api.whatsapp.com/send?phone=8801738313337'>
                 <span className='social-main'>WhatsApp</span>
                 <RiWhatsappFill className='send-icon' />
                 <span className='social-secend'>Message</span>
               </a>
             </div>
             <div className='email-me social-contact-btn'>
-              <a href='#'>
+              <a href='mailto:talk.rashed@gmail.com?subject=Hello'>
                 <span className='social-main'>Email</span>
 
                 <AiOutlineMail className='send-icon' />
@@ -67,7 +67,7 @@ const Contact = () => {
               </a>
             </div>
             <div className='facebook social-contact-btn'>
-              <a href='#'>
+              <a href='https://m.me/CodeTravelGame'>
                 <span className='social-main'>Messenger</span>
 
                 <BsMessenger className='send-icon' />

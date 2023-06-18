@@ -226,15 +226,15 @@ textarea {
     display: none;
   }
   .whatsapp:hover {
-    scale: 0.9;
+    scale: 1.1;
   }
 
   .email-me:hover {
-    scale: 0.9;
+    scale: 1.1;
   }
 
   .facebook:hover {
-    scale: 0.9;
+    scale: 1.1;
   }
   .send-icon {
     font-size: 0.9rem;
