@@ -139,6 +139,9 @@ textarea {
 
 /* Mobile Responsive Design for Teblet */
 @media (max-width: 1024px) {
+  #Contact {
+    height: auto;
+  }
   .contact-container {
     padding: 0 2%;
   }

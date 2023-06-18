@@ -67,6 +67,10 @@
 
 /* Mobile Responsive Design for Teblet */
 @media (max-width: 1024px) {
+  #Projects {
+    height: auto;
+  }
+
   .swiper {
     width: 100%;
     padding-top: 50px;
