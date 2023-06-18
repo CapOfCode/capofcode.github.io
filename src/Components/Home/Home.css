@@ -61,6 +61,27 @@ p span {
   border-radius: 1rem;
 }
 
+.header-socials a:hover {
+  background-color: var(--color-white);
+  transition: var(--transition-main);
+}
+
+.header-socials a:hover .linkedin-icon {
+  color: #0a66c2;
+  transition: var(--transition-main);
+}
+
+.header-socials a:hover .github-icon {
+  color: #333333;
+}
+
+.header-socials a:hover .youtube-icon {
+  color: #ff0000;
+}
+.header-socials a:hover .twitter-icon {
+  color: #1da1f2;
+}
+
 .header-socials::after {
   content: "";
   width: 1px;
