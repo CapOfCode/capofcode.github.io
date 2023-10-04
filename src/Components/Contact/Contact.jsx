@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+
 import "./Contact.css";
 import { RiWhatsappFill } from "react-icons/ri";
 import { AiOutlineMail } from "react-icons/ai";
@@ -12,6 +12,7 @@ import {
 /* Email Js */
 
 import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 
 const Contact = () => {
   /* Email JS Email Sending*/
@@ -52,7 +53,7 @@ const Contact = () => {
           <div className='social-contact'>
             <h1 className='contact-title'> Social Media</h1>
             <div className='whatsapp social-contact-btn'>
-              <a
+              <a rel="noreferrer"
                 href='https://api.whatsapp.com/send?phone=8801738313337'
                 target='_blank'>
                 <span className='social-main'>WhatsApp</span>
@@ -61,7 +62,7 @@ const Contact = () => {
               </a>
             </div>
             <div className='email-me social-contact-btn'>
-              <a
+              <a rel="noreferrer"
                 href='mailto:talk.rashed@gmail.com?subject=Hello'
                 target='_blank'>
                 <span className='social-main'>Email</span>
@@ -71,7 +72,7 @@ const Contact = () => {
               </a>
             </div>
             <div className='facebook social-contact-btn'>
-              <a href='https://m.me/CodeTravelGame' target='_blank'>
+              <a rel="noreferrer" href='https://m.me/CodeTravelGame' target='_blank'>
                 <span className='social-main'>Messenger</span>
 
                 <BsMessenger className='send-icon' />

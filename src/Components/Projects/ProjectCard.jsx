@@ -36,9 +36,9 @@ const ProjectCard = ({
             ))}
           </div>
         </div>
-        <div>
+       
           <img src={image} alt='' />
-        </div>
+   
       </div>
       <div className='project-content'>
         <div className='project-title'>

@@ -35,15 +35,18 @@
 }
 
 .project-image {
-  height: 100%;
-  width: 100%;
-  padding: 0.5rem;
+  border-radius: 10px;
+  height: 100%; /* Set the height to fill the container */
+  width: 100%; /* Set the width to fill the container */
   position: relative;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin: auto;
-  overflow: hidden;
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.project-image img {
+  height: 100%; /* Ensure the image height fills the container */
+  width: 100%; /* Ensure the image width fills the container */
+  object-fit: cover; /* Apply the cover effect to the image */
+  object-position: center; /* Center the image within the container */
 }
 .skill-used {
   position: absolute;

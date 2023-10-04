@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "./images/profile-photo.jpg";
+
 import { BsDownload } from "react-icons/bs";
 import { AiFillMessage } from "react-icons/ai";
 import "./About.css";
@@ -10,19 +10,19 @@ const About = () => {
         <h2 className='title'>About Me</h2>
         <div className='contant'>
           <div className='image-container'>
-            <img src={aboutImage} alt='' />
+            <img src="https://i.postimg.cc/HnC5cTtD/profile-pic-13.png" alt='' />
           </div>
           <div className='text-container'>
             <p>
-              👋 Greetings! I'm a passionate front-end web developer,
+              👋 Greetings! I&apos;m a passionate front-end web developer,
               well-versed in the enchanting arts of HTML, CSS, and JavaScript.
-              Currently, I'm on a thrilling quest to master the mystical MERN
-              stack (MongoDB, Express.js, React.js, Node.js). Together, let's
+              Currently, I&apos;m on a thrilling quest to master the mystical MERN
+              stack (MongoDB, Express.js, React.js, Node.js). Together, let&apos;s
               embark on a journey to create captivating web experiences! ✨
               <br />
               <br />✨ In the realm of coding, I am a sorcerer of pixels and a
               maestro of creativity. With a wave of my keyboard, I conjure
-              digital wonders that will leave you spellbound! Let's bring your
+              digital wonders that will leave you spellbound! Let&apos;s bring your
               ideas to life and sprinkle a touch of magic to make your web
               dreams come true! 🌟
             </p>

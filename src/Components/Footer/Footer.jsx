@@ -1,4 +1,3 @@
-import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
@@ -12,22 +11,22 @@ const Footer = () => {
       <footer>
         <div className='container footer-container'>
           <div className='footer-socials'>
-            <a href='https://www.linkedin.com/in/capofcode/' target='_blank'>
+            <a rel="noreferrer" href='https://www.linkedin.com/in/codewithrashed/' target='_blank'>
               <div className='footer-icon'>
                 <BsLinkedin className='linkedin-icon' />
               </div>
             </a>
-            <a href='https://github.com/CapOfCode' target='_blank'>
+            <a rel="noreferrer" href='https://github.com/codewithrashed' target='_blank'>
               <div className='footer-icon'>
                 <FaGithubSquare className='github-icon' />
               </div>
             </a>
-            <a href='https://www.youtube.com/@capofcode' target='_blank'>
+            <a rel="noreferrer" href='https://www.youtube.com/@codewithrashed' target='_blank'>
               <div className='footer-icon'>
                 <BsYoutube className='youtube-icon' />
               </div>
             </a>
-            <a href='https://twitter.com/capofcode' target='_blank'>
+            <a rel="noreferrer" href='https://twitter.com/codewithrashed' target='_blank'>
               <div className='footer-icon'>
                 <FaTwitterSquare className='twitter-icon' />
               </div>

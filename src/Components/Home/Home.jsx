@@ -13,28 +13,26 @@ const Home = () => {
         <header>
           <div className='head-content'>
             <div className='profile-img-div'>
-              <img src={profileImage} alt='' className='profile-img' />
+              <img src="https://i.postimg.cc/3NHrCR61/profile-pic-5.png" alt='' className='profile-img' />
             </div>
             <h2>
-              <span>R</span>ashed
+              <span>MERN</span> Stack Developer
             </h2>
-            <p>
-              <span>F</span>ront-End <span>W</span>eb <span>D</span>eveloper
-            </p>
+            
           </div>
 
           <div className='icon-and-text'>
             <div className='header-socials'>
-              <a href='https://www.linkedin.com/in/capofcode/' target='_blank'>
+              <a href='https://www.linkedin.com/in/codewithrashed/' target='_blank'>
                 <BsLinkedin className='linkedin-icon' />
               </a>
-              <a href='https://github.com/CapOfCode' target='_blank'>
+              <a href='https://github.com/codewithrashed' target='_blank'>
                 <FaGithubSquare className='github-icon' />
               </a>
-              <a href='https://www.youtube.com/@capofcode' target='_blank'>
+              <a href='https://www.youtube.com/@codewithrashed' target='_blank'>
                 <BsYoutube className='youtube-icon' />
               </a>
-              <a href='https://twitter.com/capofcode' target='_blank'>
+              <a href='https://twitter.com/codewithrashed' target='_blank'>
                 <FaTwitterSquare className='twitter-icon' />
               </a>
             </div>

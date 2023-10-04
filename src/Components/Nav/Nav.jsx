@@ -1,10 +1,10 @@
-import React, { useState } from "react";
 import { AiFillHome } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { GiSkills } from "react-icons/gi";
 import { MdWorkHistory } from "react-icons/md";
 import { AiFillMessage } from "react-icons/ai";
 import "./Nav.css";
+import { useState } from "react";
 
 const Nav = () => {
   const [activeNow, setActiveNow] = useState("#Home");
@@ -15,7 +15,7 @@ const Nav = () => {
         onClick={() => {
           window.location.href = "#Home";
         }}>
-        <h2>CapOfCode</h2>
+        <h2><span className="part-logo">Code</span> With Rashed</h2>
       </div>
       <a
         href='#Home'
