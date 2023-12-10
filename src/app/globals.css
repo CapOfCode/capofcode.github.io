@@ -8,12 +8,12 @@
   --light: #181a1b;
   --lightDarker: #746463;
   --accentRgb: 0,24,204;
-  --accent: rgb(var(--accentRgb));
+  --accent: rgb(0,24,204);
   --lightRgb: 24,26,27;
   --darkRgb: 232,230,227;
   --shadowColor: rgba(0,0,0,.35);
-  --shadow: 0 0px 5px var(--shadowColor);
-  --shadowLifted: 0 3px 15px var(--shadowColor);
+  --shadow: 0 0px 5px rgba(0,0,0,.35);
+  --shadowLifted: 0 3px 15px rgba(0,0,0,.35);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,8 +27,8 @@
     --accentRgb: 103,253,103;
     --darkRgb: 24,26,27;
     --shadowColor: rgba(0,0,0,.75);
-    --shadow: 0 0px 10px var(--shadowColor);
-    --shadowLifted: 0 5px 20px var(--shadowColor);
+    --shadow: 0 0px 10px rgba(0,0,0,.75);
+    --shadowLifted: 0 5px 20px rgba(0,0,0,.75);
 }
 }
 
