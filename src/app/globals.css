@@ -2,37 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-
-:root {
-  --dark: #e8e6e3;
-  --darkLighter: #dadada;
-  --light: #181a1b;
-  --lightDarker: #746463;
-  --accentRgb: 0,24,204;
-  --accent: rgb(0,24,204);
-  --shadowColor: rgba(0,0,0,.35);
-
-}
-
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
+@layer base {
+  :root{
+    --dark: #e8e6e3;
+    --darkLighter: #dadada;
+    --light: #181a1b;
+    --lightDarker: #746463;
+    --accentRgb: rgba(0,24,204,.8);
+    --accent: rgb(0,24,204);
+    --shadowColor: rgba(0,0,0,.35);
+  }
+  .dark{
     --dark: #181a1b;
     --darkLighter: #242424;
     --light: #e8e6e3;
     --lightDarker: #848484;
+    --accentRgb: rgba(103,253,103,.8);
     --accent: #67fd67;
     --shadowColor: rgba(0,0,0,.75);
-}
+  }
 }
 
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--foreground-rgb)); /* Assuming --foreground-rgb is defined elsewhere */
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb)) /* Assuming --background-end-rgb is defined elsewhere */
+  )
+  rgb(var(--background-start-rgb)); /* Assuming --background-start-rgb is defined elsewhere */
 }
