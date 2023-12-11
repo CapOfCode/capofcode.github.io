@@ -4,5 +4,5 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 
 export function ThemeProvider({ children, ...props }) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
+  return <NextThemesProvider enableSystem={true} attribute="class" {...props}>{children}</NextThemesProvider>;
 }
