@@ -8,7 +8,7 @@ module.exports = withMT({
     "./node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: "class",
+  darkMode: ["class"],
   theme: {colors: {
     "dark": "var(--dark)",
   "darkLighter": "var(--darkLighter)",
@@ -16,13 +16,13 @@ module.exports = withMT({
   "lightDarker": "var(--lightDarker)",
   "accentRgb": "var(--accentRgb)",
   "accent": "var(--accent)",
-  "lightRgb": "var(--lightRgb)",
-  "darkRgb": "var(--darkRgb)",
   "shadowColor": "var(--shadowColor)",
-  "shadow": "var(--shadow)",
-  "shadowLifted": "var(--shadowLifted)",
   },
     extend: {
+      boxShadow: {
+        "customShadow": "0 0px 10px rgba(0,0,0,.75)",
+        "shadowLifted": "0 5px 20px rgba(0,0,0,.75)",
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
