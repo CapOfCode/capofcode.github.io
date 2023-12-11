@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { Avatar } from "../material_tailwind";
+import { ThemeSwitcher } from "@/Theme/ThemeSwitcher";
 
 const NavBar = () => {
   return (
     <div>
-      <nav className="bg-dark w-full shadow-customShadow  shadow-shadowColor flex justify-between items-center py-3">
+      <nav className="bg-dark w-full shadow-shadowColor flex justify-between items-center py-3">
         <div className="logo">
           <Link href="/">
             <Avatar
@@ -18,9 +19,9 @@ const NavBar = () => {
           <Link href="project">Project</Link>
           <Link href="about">About</Link>
           <Link href="contact">Contact</Link>
-          <button className="border-2 border-accent p-3 rounded-full shadow-lightDarker shadow-customShadow hover:shadow-customShadow focus:shadow-customShadow hover:shadow-accent  focus:shadow-accent transition-all ease-in-out">
-            Dark
-          </button>
+
+          <ThemeSwitcher/>
+          
         </div>
       </nav>
     </div>
