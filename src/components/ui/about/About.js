@@ -26,8 +26,8 @@ const About = () => {
               build something <span className="text-accent">Awesome</span>!</span> 
             </p>
           </div>
-          <div>
-            <Link className="text-darkLighter font-medium bg-accentRgb px-4 py-3 rounded-md shadow-customShadow hover:bg-accent hover:translate-x-1 transition-all ease-in-out" href="https://docs.google.com/document/d/1kj6NViwHd5_0jWXYqgRCDa-SU_48HE0Vz-gz6DNTPVQ/export?format=pdf">Resume</Link>
+          <div className="mt-5">
+            <Link className=" text-darkLighter font-medium bg-accentRgb px-4 py-3 rounded-md shadow-customShadow hover:bg-accent hover:translate-x-1 transition-all ease-in-out" href="https://docs.google.com/document/d/1kj6NViwHd5_0jWXYqgRCDa-SU_48HE0Vz-gz6DNTPVQ/export?format=pdf">Resume</Link>
           </div>
         </div>
         <div className="skill-section text-light">
