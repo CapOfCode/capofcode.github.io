@@ -7,7 +7,7 @@ const NavBar = () => {
     <div>
       <nav className="bg-dark w-full shadow-shadowColor flex justify-between items-center py-3">
         <div className="logo">
-          <Link href="/">
+          <Link href="#home">
             <Avatar
               src="https://i.ibb.co/sRJYQrx/profile-pic-2.png"
               alt="avatar"
@@ -16,12 +16,11 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="menu text-light flex justify-center gap-3 items-center">
-          <Link href="project">Project</Link>
-          <Link href="about">About</Link>
-          <Link href="contact">Contact</Link>
-
-          <ThemeSwitcher/>
-          
+          <Link href="#about">About</Link>
+          <Link href="#projects">Project</Link>
+          <Link href="#contact">Contact</Link>
++
+          <ThemeSwitcher />
         </div>
       </nav>
     </div>

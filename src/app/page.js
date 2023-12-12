@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ThemeSwitcher } from "@/Theme/ThemeSwitcher";
 import Banner from "@/components/ui/banner/Banner";
 import SectionTitle from "@/components/ui/shared/SectionTitle";
+import About from "@/components/ui/about/About";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <Banner></Banner>
       </section>
       <section id="about">
-        <SectionTitle></SectionTitle>
+        <About />
       </section>
 
       <section id="projects">
