@@ -7,8 +7,8 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="bg-dark">
-      <div className=" max-w-[1240px]  px-[20px] mx-auto  flex justify-center lg:justify-between items-center py-3">
-        <p className="text-lg drop-shadow"> Copyright &copy; Rashed</p>
+      <div className=" max-w-[1240px]  px-[20px] mx-auto  flex justify-center flex-col lg:flex-row gap-3 lg:justify-between items-center py-3">
+        <p className="text-lg drop-shadow lg:order-first order-last"> Copyright &copy; Rashed</p>
         <div className="footer-socials flex justify-center items-center gap-3 text-xl">
           <Link
             href="https://www.linkedin.com/in/codewithrashed/"
