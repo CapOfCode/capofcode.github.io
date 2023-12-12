@@ -5,6 +5,7 @@ import { ThemeSwitcher } from "@/Theme/ThemeSwitcher";
 import Banner from "@/components/ui/banner/Banner";
 import SectionTitle from "@/components/ui/shared/SectionTitle";
 import About from "@/components/ui/about/About";
+import Projects from "@/components/ui/projects/Projects";
 
 export default function Home() {
   return (
@@ -17,8 +18,8 @@ export default function Home() {
         <About />
       </section>
 
-      <section id="projects">
-        <SectionTitle></SectionTitle>
+      <section id="projects" >
+        <Projects></Projects>
       </section>
 
       <section id="contact">

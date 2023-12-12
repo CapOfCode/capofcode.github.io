@@ -1,3 +1,3 @@
 "use client";
-import { Button, Avatar } from "@material-tailwind/react";
-export { Button, Avatar };
+import { Button, Avatar , Tooltip} from "@material-tailwind/react";
+export { Button, Avatar, Tooltip };

@@ -3,10 +3,10 @@ import SectionTitle from "../shared/SectionTitle";
 
 const About = () => {
   return (
-    <div className="my-20 ">
+    <div className="my-20">
       <SectionTitle
         title="About Me"
-        subTitle="More about me and my skills"
+        subTitle="More About Me And My Skills"
       ></SectionTitle>
       <div className="content-container grid lg:grid-cols-2 gap-5 mt-5">
         <div className="about-me-section text-light">
