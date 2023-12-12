@@ -45,7 +45,7 @@ const About = () => {
             <DownloadButton></DownloadButton>
           </div>
         </div>
-        <div className="skill-section text-light mt-5">
+        <div className="skill-section text-light mt-5 md:mt-0">
           <h3 className=" text-2xl text-light font-medium drop-shadow">
             Tech Stack
           </h3>
