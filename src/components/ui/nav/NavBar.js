@@ -11,7 +11,7 @@ const NavBar = () => {
             <Avatar
               src="https://i.ibb.co/sRJYQrx/profile-pic-2.png"
               alt="avatar"
-              className="h-8 w-8 lg:w-12 lg:h-12 border-2 border-accent rounded-full shadow-lightDarker shadow-customShadow hover:shadow-customShadow focus:shadow-customShadow hover:shadow-accent  focus:shadow-accent transition-all ease-in-out"
+              className="h-8 w-8 md:w-10 md:h-10 lg:w-12 lg:h-12 border-2 border-accent rounded-full shadow-lightDarker shadow-customShadow hover:shadow-customShadow focus:shadow-customShadow hover:shadow-accent  focus:shadow-accent transition-all ease-in-out"
             />
           </Link>
         </div>
