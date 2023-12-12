@@ -5,24 +5,25 @@ import Projects from "@/components/ui/projects/Projects";
 import Contact from "@/components/ui/contact/Contact";
 import Footer from "@/components/ui/footer/Footer";
 
-
 export default function Home() {
   return (
     <main>
-      <section id="home">
+      <div className="sticky z-50 top-0">
         <NavBar></NavBar>
+      </div>
+      <section id="home">
         <Banner></Banner>
       </section>
       <section id="about">
         <About />
       </section>
 
-      <section id="projects" >
+      <section id="projects">
         <Projects></Projects>
       </section>
 
       <section id="contact">
-      <Contact></Contact>
+        <Contact></Contact>
       </section>
       <section id="footer">
         <Footer></Footer>

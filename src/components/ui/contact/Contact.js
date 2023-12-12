@@ -1,23 +1,5 @@
 "use client";
 import SectionTitle from "../shared/SectionTitle";
-
-// const Contact = () => {
-//   return (
-
-//        <div className="my-20">
-//       <SectionTitle
-//         title="Contact Me"
-//         subTitle="Share Your Query"
-//       ></SectionTitle>
-//       <div>
-
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Contact
-
 import { RiWhatsappFill } from "react-icons/ri";
 import { AiOutlineMail } from "react-icons/ai";
 import {
