@@ -1,9 +1,10 @@
-import NavBar from "@/components/ui/nav/navbar";
+
 import Banner from "@/components/ui/banner/Banner";
 import About from "@/components/ui/about/About";
 import Projects from "@/components/ui/projects/Projects";
 import Contact from "@/components/ui/contact/Contact";
 import Footer from "@/components/ui/footer/Footer";
+import NavBar from "@/components/ui/nav/NavBar";
 
 export default function Home() {
   return (
