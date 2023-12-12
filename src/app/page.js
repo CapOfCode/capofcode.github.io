@@ -1,4 +1,3 @@
-
 import Banner from "@/components/ui/banner/Banner";
 import About from "@/components/ui/about/About";
 import Projects from "@/components/ui/projects/Projects";
@@ -19,7 +18,7 @@ export default function Home() {
         <About />
       </section>
 
-      <section id="projects">
+      <section id="projects" className="bg-darkLighter">
         <Projects></Projects>
       </section>
 

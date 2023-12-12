@@ -47,13 +47,13 @@ const Contact = () => {
       );
   };
   return (
-    <div className="my-20">
+    <div className="my-20 max-w-[1240px]  px-[20px] mx-auto">
       <SectionTitle
         title="Contact Me"
         subTitle="Share Your Query"
       ></SectionTitle>
       <div className="contact-content">
-        <div className="social-contact flex gap-3 justify-center mt-4">
+        <div className="social-contact flex flex-wrap gap-3 justify-center mt-4">
           <Link
             className="bg-accentRgb rounded px-3 py-2 text-dark flex gap-2 shadow-customShadow items-center shadow-accent"
             href="https://api.whatsapp.com/send?phone=8801738313337"
@@ -81,7 +81,7 @@ const Contact = () => {
           </Link>
         </div>
 
-        <div className="contact-from">
+        <div className="contact-from w-full md:w-3/4 lg:w-1/2 mx-auto">
           <div className="divider flex gap-1 items-center justify-center my-3">
             <hr className="w-20 h-px bg-lightDarker border-0" />
             <p>Or</p>
@@ -97,20 +97,20 @@ const Contact = () => {
               name="name"
               placeholder="Your Name"
               required
-              className="outline-none border-2 border-lightDarker h-8  bg-darkLighter p-5 text-light focus:shadow-customShadow focus:shadow-accent focus:border-accentRgb rounded-md lg:w-1/2"
+              className="outline-none border-2 border-lightDarker h-8  bg-darkLighter p-5 text-light focus:shadow-customShadow focus:shadow-accent focus:border-accentRgb rounded-md w-full"
             />
             <input
               type="email"
               name="email"
               placeholder="Your Email"
               required
-              className="outline-none border-2 border-lightDarker h-8  bg-darkLighter p-5 text-light focus:shadow-customShadow focus:shadow-accent focus:border-accentRgb rounded-md lg:w-1/2"
+              className="outline-none border-2 border-lightDarker h-8  bg-darkLighter p-5 text-light focus:shadow-customShadow focus:shadow-accent focus:border-accentRgb rounded-md w-full"
             />
             <input
               type="text"
               name="subject"
               placeholder="Subject"
-              className="outline-none border-2 border-lightDarker h-8  bg-darkLighter p-5 text-light focus:shadow-customShadow focus:shadow-accent focus:border-accentRgb rounded-md lg:w-1/2"
+              className="outline-none border-2 border-lightDarker h-8  bg-darkLighter p-5 text-light focus:shadow-customShadow focus:shadow-accent focus:border-accentRgb rounded-md w-full"
             />
             <textarea
               name="message"
@@ -119,7 +119,7 @@ const Contact = () => {
               rows="7"
               placeholder="Your Message"
               required
-              className="outline-none border-2 border-lightDarker bg-darkLighter p-5 text-light focus:shadow-customShadow focus:shadow-accent focus:border-accentRgb rounded-md lg:w-1/2"
+              className="outline-none border-2 border-lightDarker bg-darkLighter p-5 text-light focus:shadow-customShadow focus:shadow-accent focus:border-accentRgb rounded-md w-full"
             ></textarea>
             <div className="cta-div">
               <div>

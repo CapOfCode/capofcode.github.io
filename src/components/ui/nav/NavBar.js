@@ -10,10 +10,10 @@ const NavBar = () => {
   useEffect(() => {
     setActiveNav("#home");
   }, []);
-console.log(activeNav)
+
   return (
-    <div >
-      <nav className="bg-dark w-full shadow-shadowColor flex justify-between items-center py-3">
+    <div className="bg-dark shadow-shadowColor">
+      <nav className="max-w-[1240px]  px-[20px] flex justify-between items-center py-3 mx-auto">
         <div className="logo">
           <Link
             href="#home"

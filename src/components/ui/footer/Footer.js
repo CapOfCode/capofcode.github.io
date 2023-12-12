@@ -6,40 +6,47 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-dark w-full  flex justify-center lg:justify-between items-center py-3">
-      <p className="text-lg drop-shadow"> Copyright &copy; Rashed</p>
-      <div className="footer-socials flex justify-center items-center gap-3 text-xl">
-        <Link
-          href="https://www.linkedin.com/in/codewithrashed/"
-          target="_blank"
-          className="bg-darkLighter p-2 flex justify-center items-center"
-        >
-          <div className="footer-icon">
-            <BsLinkedin className="linkedin-icon" />
-          </div>
-        </Link>
-        <Link href="https://github.com/codewithrashed" target="_blank" 
-          className="bg-darkLighter p-2 flex justify-center items-center"
+    <div className="bg-dark">
+      <div className=" max-w-[1240px]  px-[20px] mx-auto  flex justify-center lg:justify-between items-center py-3">
+        <p className="text-lg drop-shadow"> Copyright &copy; Rashed</p>
+        <div className="footer-socials flex justify-center items-center gap-3 text-xl">
+          <Link
+            href="https://www.linkedin.com/in/codewithrashed/"
+            target="_blank"
+            className="bg-darkLighter p-2 flex justify-center items-center"
           >
-          <div className="footer-icon">
-            <FaGithubSquare className="github-icon" />
-          </div>
-        </Link>
-        <Link href="https://www.youtube.com/@codewithrashed" target="_blank"
-          className="bg-darkLighter p-2 flex justify-center items-center"
+            <div className="footer-icon">
+              <BsLinkedin className="linkedin-icon" />
+            </div>
+          </Link>
+          <Link
+            href="https://github.com/codewithrashed"
+            target="_blank"
+            className="bg-darkLighter p-2 flex justify-center items-center"
           >
-          <div className="footer-icon">
-            <BsYoutube className="youtube-icon" />
-          </div>
-        </Link>
-        <Link href="https://twitter.com/codewithrashed" target="_blank" 
-          className="bg-darkLighter p-2 flex justify-center items-center"
-        
-        >
-          <div className="footer-icon">
-            <FaTwitterSquare className="twitter-icon" />
-          </div>
-        </Link>
+            <div className="footer-icon">
+              <FaGithubSquare className="github-icon" />
+            </div>
+          </Link>
+          <Link
+            href="https://www.youtube.com/@codewithrashed"
+            target="_blank"
+            className="bg-darkLighter p-2 flex justify-center items-center"
+          >
+            <div className="footer-icon">
+              <BsYoutube className="youtube-icon" />
+            </div>
+          </Link>
+          <Link
+            href="https://twitter.com/codewithrashed"
+            target="_blank"
+            className="bg-darkLighter p-2 flex justify-center items-center"
+          >
+            <div className="footer-icon">
+              <FaTwitterSquare className="twitter-icon" />
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );
