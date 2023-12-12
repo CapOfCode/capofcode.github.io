@@ -3,6 +3,7 @@ import Banner from "@/components/ui/banner/Banner";
 import About from "@/components/ui/about/About";
 import Projects from "@/components/ui/projects/Projects";
 import Contact from "@/components/ui/contact/Contact";
+import Footer from "@/components/ui/footer/Footer";
 
 
 export default function Home() {
@@ -24,7 +25,7 @@ export default function Home() {
       <Contact></Contact>
       </section>
       <section id="footer">
-        <p>Footer</p>
+        <Footer></Footer>
       </section>
     </main>
   );
