@@ -1,6 +1,5 @@
 import Image from "next/image";
 import SectionTitle from "../shared/SectionTitle";
-import Link from "next/link";
 import DownloadButton from "../shared/DownloadButton";
 
 const About = () => {
