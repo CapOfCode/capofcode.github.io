@@ -1,7 +1,7 @@
 import Image from "next/image";
 import bannerImage from "../../../assets/hero-bg.webp";
 import { roboto_mono } from "@/app/font";
-import ContactButton from "../shared/contactButton";
+import Link from "next/link";
 const Banner = () => {
   return (
     <div className={roboto_mono.className}>
@@ -29,8 +29,13 @@ const Banner = () => {
               Digital Products.
             </p>
           </div>
-          <div className="mt-4">
-            <ContactButton />
+          <div className="mt-4 z-50">
+            <Link
+              href="#contact"
+              className="cursor-pointer text-darkLighter font-medium bg-accentRgb px-4 py-3 rounded-md shadow-customShadow hover:bg-accent hover:translate-x-1 transition-all ease-in-out"
+            >
+              Contact Me
+            </Link>
           </div>
         </div>
       </div>
