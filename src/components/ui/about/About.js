@@ -69,6 +69,7 @@ const About = () => {
                 <SkillItem>Node JS</SkillItem>
                 <SkillItem>Nodemon</SkillItem>
                 <SkillItem>Firebase Auth</SkillItem>
+                <SkillItem>Next Auth</SkillItem>
                 <SkillItem>MongoDB</SkillItem>
               </div>
             </div>

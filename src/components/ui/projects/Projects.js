@@ -30,7 +30,7 @@ const Projects = () => {
     {
       name: "Zero Hunger — A Food Donation App",
       description: "Food donation and request system for Community",
-      skills: ["React Js", "Tailwind CSS", "MongoDB"],
+      skills: ["React Js", "Tailwind CSS", "MongoDB", "Firebase Auth"],
       source_code: "https://github.com/CodeWithRashed/zero-hunger-client-side",
       live_link: "https://zero-hunger-client-five.vercel.app/",
       intro_video: "https://zero-hunger-client-five.vercel.app/",
@@ -39,7 +39,7 @@ const Projects = () => {
     {
       name: "Event Pros | All-in-one event Solution",
       description: "Event-Pro is an all-in-one event management website.",
-      skills: ["React Js", "Tailwind CSS"],
+      skills: ["React Js", "Tailwind CSS", "Firebase Auth"],
       source_code: "https://github.com/CodeWithRashed/event-pros",
       live_link: "https://event-pros.web.app/",
       intro_video: "https://event-pros.web.app/",
