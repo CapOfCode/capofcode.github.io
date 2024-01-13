@@ -1,7 +1,7 @@
 import Image from "next/image";
 import bannerImage from "../../../assets/hero-bg.webp";
 import { roboto_mono } from "@/app/font";
-import Link from "next/link";
+import ContactButton from "../shared/contactButton";
 const Banner = () => {
   return (
     <div className={roboto_mono.className}>
@@ -24,19 +24,13 @@ const Banner = () => {
               Full Stack Web <span className="text-accent">Developer</span> Who
               Enjoys Building <br className="hidden lg:block" />
               <span className="text-accent">Fast And</span>
- 
               <br className="md:hidden" />
               <span className="text-accent">Accessible </span>
               Digital Products.
             </p>
           </div>
           <div className="mt-4">
-            <Link
-              href="#contact"
-              className="text-darkLighter font-medium bg-accentRgb px-4 py-3 rounded-md shadow-customShadow hover:bg-accent hover:translate-x-1 transition-all ease-in-out"
-            >
-              Contact Me
-            </Link>
+            <ContactButton />
           </div>
         </div>
       </div>
