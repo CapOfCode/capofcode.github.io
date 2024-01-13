@@ -55,7 +55,7 @@ const Contact = () => {
       <div className="contact-content">
         <div className="social-contact flex flex-wrap gap-3 justify-center mt-4">
           <Link
-            className="bg-accentRgb rounded px-3 py-2 text-dark flex gap-2 shadow-customShadow items-center shadow-accent"
+            className="hover:bg-accent transition-all ease-in-out bg-accentRgb rounded px-3 py-2 text-dark flex gap-2 shadow-customShadow items-center shadow-accent"
             href="https://api.whatsapp.com/send?phone=8801738313337"
             target="_blank"
           >
@@ -64,7 +64,7 @@ const Contact = () => {
           </Link>
 
           <Link
-            className="bg-accentRgb rounded px-3 py-2 text-dark flex gap-2 shadow-customShadow items-center shadow-accent"
+            className="hover:bg-accent transition-all ease-in-out bg-accentRgb rounded px-3 py-2 text-dark flex gap-2 shadow-customShadow items-center shadow-accent"
             href="mailto:talk.rashed@gmail.com"
           >
             <AiOutlineMail className="send-icon" />
@@ -72,7 +72,7 @@ const Contact = () => {
           </Link>
 
           <Link
-            className="bg-accentRgb rounded px-3 py-2 text-dark flex gap-2 shadow-customShadow items-center shadow-accent"
+            className="hover:bg-accent transition-all ease-in-out  bg-accentRgb rounded px-3 py-2 text-dark flex gap-2 shadow-customShadow items-center shadow-accent"
             href="https://m.me/CodeTravelGame"
             target="_blank"
           >
@@ -124,7 +124,7 @@ const Contact = () => {
             <div className="cta-div">
               <div>
                 <button
-                  className="bg-accentRgb rounded px-3 py-2 text-dark shadow-customShadow  shadow-accent"
+                  className="hover:bg-accent transition-all ease-in-out bg-accentRgb rounded px-3 py-2 text-dark shadow-customShadow  shadow-accent"
                   type="submit"
                   value="Send"
                 >
