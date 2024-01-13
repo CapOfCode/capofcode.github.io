@@ -13,7 +13,7 @@ const Footer = () => {
           <Link
             href="https://www.linkedin.com/in/codewithrashed/"
             target="_blank"
-            className="bg-darkLighter p-2 flex justify-center items-center"
+            className="bg-darkLighter p-2 flex justify-center items-center hover:scale-105 transition-all ease-in-out"
           >
             <div className="footer-icon">
               <BsLinkedin className="linkedin-icon" />
@@ -22,7 +22,7 @@ const Footer = () => {
           <Link
             href="https://github.com/codewithrashed"
             target="_blank"
-            className="bg-darkLighter p-2 flex justify-center items-center"
+            className="bg-darkLighter p-2 flex justify-center items-center hover:scale-105 transition-all ease-in-out"
           >
             <div className="footer-icon">
               <FaGithubSquare className="github-icon" />
@@ -31,7 +31,7 @@ const Footer = () => {
           <Link
             href="https://www.youtube.com/@codewithrashed"
             target="_blank"
-            className="bg-darkLighter p-2 flex justify-center items-center"
+            className="bg-darkLighter p-2 flex justify-center items-center hover:scale-105 transition-all ease-in-out"
           >
             <div className="footer-icon">
               <BsYoutube className="youtube-icon" />
@@ -40,7 +40,7 @@ const Footer = () => {
           <Link
             href="https://twitter.com/codewithrashed"
             target="_blank"
-            className="bg-darkLighter p-2 flex justify-center items-center"
+            className="bg-darkLighter p-2 flex justify-center items-center hover:scale-105 transition-all ease-in-out" 
           >
             <div className="footer-icon">
               <FaTwitterSquare className="twitter-icon" />
