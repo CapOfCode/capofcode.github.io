@@ -25,7 +25,7 @@ const Banner = () => {
               Enjoys Building <br className="hidden lg:block" />
               <span className="text-accent">Fast And</span>
               <br className="md:hidden" />
-              <span className="text-accent">Accessible </span>
+              <span className="text-accent"> Accessible </span>
               Digital Products.
             </p>
           </div>
