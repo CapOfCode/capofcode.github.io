@@ -2,8 +2,50 @@ import Link from "next/link";
 import SectionTitle from "../shared/SectionTitle";
 import { Tooltip } from "../material_tailwind";
 import Image from "next/image";
+import { TbView360 } from "react-icons/tb";
+import { FaCode } from "react-icons/fa";
+import { CiYoutube } from "react-icons/ci";
+import SkillItem from "../shared/skillItem";
 
 const Projects = () => {
+  const projects = [
+    {
+      name: "AI Genie - Generative AI Application",
+      description:
+        "AI Genie is a generative AI, Will help you generate image, audio, and more.",
+      skills: [
+        "Next Js",
+        "TypeScript",
+        "Tailwind CSS",
+        "MongoDB",
+        "Strip",
+        "NextAuth",
+      ],
+      source_code: "https://github.com/CodeWithRashed/next-ai-genie",
+      live_link: "https://next-ai-genie.vercel.app/",
+      intro_video: "https://next-ai-genie.vercel.app/",
+      thumbnail:
+        "https://i.ibb.co/qdGPGs5/screencapture-next-ai-genie-vercel-app2.png",
+    },
+    {
+      name: "Zero Hunger — A Food Donation App",
+      description: "Food donation and request system for Community",
+      skills: ["React Js", "Tailwind CSS", "MongoDB"],
+      source_code: "https://github.com/CodeWithRashed/zero-hunger-client-side",
+      live_link: "https://zero-hunger-client-five.vercel.app/",
+      intro_video: "https://zero-hunger-client-five.vercel.app/",
+      thumbnail: "https://i.ibb.co/0DLq4w7/zero.png",
+    },
+    {
+      name: "Event Pros | All-in-one event Solution",
+      description: "Event-Pro is an all-in-one event management website.",
+      skills: ["React Js", "Tailwind CSS"],
+      source_code: "https://github.com/CodeWithRashed/event-pros",
+      live_link: "https://event-pros.web.app/",
+      intro_video: "https://event-pros.web.app/",
+      thumbnail: "https://i.ibb.co/TBjcYPq/event.png",
+    },
+  ];
   return (
     <div className=" py-20 max-w-[1240px]  px-[20px] mx-auto">
       <SectionTitle
@@ -12,72 +54,53 @@ const Projects = () => {
       ></SectionTitle>
 
       <div className="projects flex flex-col gap-20 mt-5">
-        <div className="project-one  grid md:grid-cols-5 bg-dark rounded-lg overflow-hidden shadow-md shadow-accentRgb ">
+        {
+          projects.map((project, index) =>(
+
+        <div key={index} className="project grid md:grid-cols-5 bg-dark rounded-lg overflow-hidden shadow-md shadow-accentRgb ">
           <div className="text-content order-last md:order-first lg:col-span-2 md:col-span-2 text-light font-medium drop-shadow space-y-3 p-5">
-            <h1 className="text-2xl ">E-Tutor | Learn From Anywhere</h1>
+            <h1 className="text-2xl ">{project.name}</h1>
             <p>
-              E-Tutor is an online learning platform for teachers and students..
+            {project.description}
             </p>
             <div className="flex flex-wrap gap-3">
-              <div className="skill bg-darkLighter w-fit px-4 py-2 rounded-lg">
-                React.js
-              </div>
-              <div className="skill bg-darkLighter w-fit px-4 py-2 rounded-lg">
-                Tailwind CSS
-              </div>
-              <div className="skill bg-darkLighter w-fit px-4 py-2 rounded-lg">
-                MongoDB
-              </div>
-              <div className="skill bg-darkLighter w-fit px-4 py-2 rounded-lg">
-                Strip
-              </div>
-              <div className="skill bg-darkLighter w-fit px-4 py-2 rounded-lg">
-                Vercel
-              </div>
+              {
+                project.skills.map((skill, index) => (
+                    <div key={index}>
+                      <SkillItem>{skill}</SkillItem>
+                    </div>
+                ))
+              }
+              
             </div>
             <div className="cta">
-              <h3 className="text-lg font-medium">Source and Live Links</h3>
+              <h3 className="text-lg font-medium">Source and Links</h3>
               <div className="mt-3 flex flex-wrap gap-2 items-center">
-                <Tooltip content="Server Side Source Code">
-                  <Link
-                    href="https://github.com/programming-hero-web-course1/b8a12-server-side-CodeWithRashed"
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded"
-                  >
-                    Server
-                  </Link>
-                </Tooltip>
-                <Tooltip content="React Source Code">
-                  <Link
-                    href="https://github.com/CodeWithRashed/e-tutor-client-side"
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded"
-                  >
-                    Source Code
-                  </Link>
-                </Tooltip>
+                <Link
+                  href={project?.source_code}
+                  className="bg-accentRgb text-dark w-fit px-4 py-2 rounded hover:bg-accent transition-all ease-in-out"
+                >
+                  <div className="flex gap-2 justify-center items-center">
+                    <FaCode /> <span>Github</span>
+                  </div>
+                </Link>
 
-                <Tooltip content="Next Js Source Code (Coming Soon)">
+                <Link
+                  href={project?.live_link}
+                  className="bg-accentRgb text-dark w-fit px-4 py-2 rounded hover:bg-accent transition-all ease-in-out"
+                >
+                  <div className="flex gap-2 justify-center items-center">
+                    <TbView360 /> <span>Live Site</span>
+                  </div>
+                </Link>
+                <Tooltip content="Watch Project Intro">
                   <Link
-                    href=""
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded cursor-not-allowed"
+                   href={project?.intro_video}
+                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded hover:bg-accent transition-all ease-in-out"
                   >
-                    Source Code
-                  </Link>
-                </Tooltip>
-
-                <Tooltip content="Same App With React">
-                  <Link
-                    href="https://e-tutor-client.vercel.app/"
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded"
-                  >
-                    Live Site V1
-                  </Link>
-                </Tooltip>
-                <Tooltip content="Same App With Next Js (Coming Soon)">
-                  <Link
-                    href=""
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded cursor-not-allowed"
-                  >
-                    Live Site V2
+                    <div className="flex gap-2 justify-center items-center">
+                      <CiYoutube /> <span>Video</span>
+                    </div>
                   </Link>
                 </Tooltip>
               </div>
@@ -85,7 +108,7 @@ const Projects = () => {
           </div>
           <div className="image-content lg:col-span-3 md:col-span-3 ">
             <Image
-              src="https://i.ibb.co/QJJnF0m/thumb.png"
+              src={project.thumbnail}
               alt="thumbnail"
               width={500}
               height={400}
@@ -93,153 +116,8 @@ const Projects = () => {
             ></Image>
           </div>
         </div>
-
-        <div className="project-one  grid md:grid-cols-5 bg-dark rounded-lg overflow-hidden shadow-md shadow-accentRgb ">
-          <div className="text-content order-last md:order-first lg:col-span-2 md:col-span-2 text-light font-medium drop-shadow space-y-3 p-5">
-            <h1 className="text-2xl ">Zero Hunger — A Food Donation App</h1>
-            <p>Food donation and request system for Community</p>
-            <div className="flex flex-wrap gap-3">
-              <div className="skill bg-darkLighter w-fit px-4 py-2 rounded-lg">
-                React.js
-              </div>
-              <div className="skill bg-darkLighter w-fit px-4 py-2 rounded-lg">
-                Tailwind CSS
-              </div>
-              <div className="skill bg-darkLighter w-fit px-4 py-2 rounded-lg">
-                MongoDB
-              </div>
-
-              <div className="skill bg-darkLighter w-fit px-4 py-2 rounded-lg">
-                Vercel
-              </div>
-            </div>
-            <div className="cta">
-              <h3 className="text-lg font-medium">Source and Live Links</h3>
-              <div className="mt-3 flex flex-wrap gap-2 items-center">
-                <Tooltip content="Server Side Source Code">
-                  <Link
-                    href="https://github.com/CodeWithRashed/zero-hunger-server"
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded"
-                  >
-                    Server
-                  </Link>
-                </Tooltip>
-                <Tooltip content="React Source Code">
-                  <Link
-                    href="https://github.com/CodeWithRashed/zero-hunger-client-side"
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded"
-                  >
-                    Source Code
-                  </Link>
-                </Tooltip>
-
-                <Tooltip content="Next Js Source Code (Coming Soon)">
-                  <Link
-                    href=""
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded cursor-not-allowed"
-                  >
-                    Source Code
-                  </Link>
-                </Tooltip>
-
-                <Tooltip content="Same App With React">
-                  <Link
-                    href="https://zero-hunger-client-five.vercel.app/"
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded"
-                  >
-                    Live Site V1
-                  </Link>
-                </Tooltip>
-                <Tooltip content="Same App With Next Js (Coming Soon)">
-                  <Link
-                    href=""
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded cursor-not-allowed"
-                  >
-                    Live Site V2
-                  </Link>
-                </Tooltip>
-              </div>
-            </div>
-          </div>
-          <div className="image-content lg:col-span-3 md:col-span-3 ">
-            <Image
-              src="https://i.ibb.co/0DLq4w7/zero.png"
-              alt="thumbnail"
-              width={500}
-              height={400}
-              className="w-full h-full object-fill"
-            ></Image>
-          </div>
-        </div>
-
-        <div className="project-one  grid md:grid-cols-5 bg-dark rounded-lg overflow-hidden shadow-md shadow-accentRgb ">
-          <div className="text-content order-last md:order-first lg:col-span-2 md:col-span-2 text-light font-medium drop-shadow space-y-3 p-5">
-            <h1 className="text-2xl ">
-              Event Pros | All-in-one event Solution
-            </h1>
-            <p>Event-Pro is an all-in-one event management website.</p>
-            <div className="flex flex-wrap gap-3">
-              <div className="skill bg-darkLighter w-fit px-4 py-2 rounded-lg">
-                React.js
-              </div>
-              <div className="skill bg-darkLighter w-fit px-4 py-2 rounded-lg">
-                Tailwind CSS
-              </div>
-
-              <div className="skill bg-darkLighter w-fit px-4 py-2 rounded-lg">
-                Vercel
-              </div>
-            </div>
-            <div className="cta">
-              <h3 className="text-lg font-medium">Source and Live Links</h3>
-              <div className="mt-3 flex flex-wrap gap-2 items-center">
-                <Tooltip content="React Source Code">
-                  <Link
-                    href="https://github.com/CodeWithRashed/event-pros"
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded"
-                  >
-                    Source Code
-                  </Link>
-                </Tooltip>
-
-                <Tooltip content="Next Js Source Code (Coming Soon)">
-                  <Link
-                    href=""
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded cursor-not-allowed"
-                  >
-                    Source Code
-                  </Link>
-                </Tooltip>
-
-                <Tooltip content="Same App With React">
-                  <Link
-                    href="https://event-pros.web.app/"
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded"
-                  >
-                    Live Site V1
-                  </Link>
-                </Tooltip>
-                <Tooltip content="Same App With Next Js (Coming Soon)">
-                  <Link
-                    href=""
-                    className="bg-accentRgb text-dark w-fit px-4 py-2 rounded cursor-not-allowed"
-                  >
-                    Live Site V2
-                  </Link>
-                </Tooltip>
-              </div>
-            </div>
-          </div>
-          <div className="image-content lg:col-span-3 md:col-span-3 ">
-            <Image
-              src="https://i.ibb.co/TBjcYPq/event.png"
-              alt="thumbnail"
-              width={500}
-              height={400}
-              className="w-full h-full object-fill"
-            ></Image>
-          </div>
-        </div>
+          ))
+        }
       </div>
     </div>
   );
