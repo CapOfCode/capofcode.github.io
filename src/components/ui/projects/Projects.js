@@ -23,7 +23,7 @@ const Projects = () => {
       ],
       source_code: "https://github.com/CodeWithRashed/next-ai-genie",
       live_link: "https://next-ai-genie.vercel.app/",
-      intro_video: "https://next-ai-genie.vercel.app/",
+      intro_video: "https://www.youtube.com/watch?v=_GQggGqlcDs",
       thumbnail:
         "https://i.ibb.co/qdGPGs5/screencapture-next-ai-genie-vercel-app2.png",
     },
