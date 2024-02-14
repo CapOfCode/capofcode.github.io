@@ -37,13 +37,13 @@ const Projects = () => {
       thumbnail: "https://i.ibb.co/0DLq4w7/zero.png",
     },
     {
-      name: "Event Pros | All-in-one event Solution",
-      description: "Event-Pro is an all-in-one event management website.",
-      skills: ["React Js", "Tailwind CSS", "Firebase Auth"],
-      source_code: "https://github.com/CodeWithRashed/event-pros",
-      live_link: "https://event-pros.web.app/",
-      intro_video: "https://event-pros.web.app/",
-      thumbnail: "https://i.ibb.co/TBjcYPq/event.png",
+      name: "ZossGadget | An E-Commerce Website (Front-End)",
+      description: "ZossGadget is an e-commerce website.",
+      skills: ["Next Js", "Tailwind CSS", "Shadcn UI"],
+      source_code: "https://github.com/CodeWithRashed/full-ecommerce",
+      live_link: "https://gadget-shop-seven.vercel.app/",
+      intro_video: "https://gadget-shop-seven.vercel.app/",
+      thumbnail: "https://i.ibb.co/zXvMfKY/zossgadget.png",
     },
   ];
   return (
