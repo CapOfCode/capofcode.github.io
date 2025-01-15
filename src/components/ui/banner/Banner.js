@@ -6,11 +6,11 @@ const Banner = () => {
   return (
     <div className={roboto_mono.className}>
       <div className="relative h-[90vh]">
-        <div className="absolute  bg-dark h-[90vh] filter opacity-[0.125] blur-[2px] grayscale-[0.9]">
+        <div className="absolute  bg-dark h-[90vh] w-full filter opacity-[0.125] blur-[2px] grayscale-[0.9]">
           <Image
             src={bannerImage}
             alt="banner-image"
-            className="object-cover h-[90vh]"
+            className="object-cover h-[90vh] w-full"
           />
         </div>
         <div className="h-full max-w-[1240px]  px-[20px] mx-auto flex flex-col justify-center items-center gap-5">
