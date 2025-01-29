@@ -1,44 +1,69 @@
-import Image from "next/image";
-import bannerImage from "../../../assets/hero-bg.webp";
-import { roboto_mono } from "@/app/font";
-import Link from "next/link";
+"use client"
+import { useRef } from 'react';
+
+import gsap from 'gsap'; // <-- import GSAP
+import { useGSAP } from '@gsap/react'; // <-- import the hook from our React package
+import { roboto_mono } from '@/app/font';
+import ScrollIndicator from './ScrollIndicator';
+
+gsap.registerPlugin(useGSAP);
+
 const Banner = () => {
+  const container = useRef();
+
+  useGSAP(() => {
+    const tl = gsap.timeline({ defaults: { ease: 'power1.inOut' } });
+
+    // Animate the left boxes from the left
+    tl.to(".box-left", { y: "-100%", duration: 0.2, stagger: 0.1 });
+
+    // Animate the right boxes from the right
+    tl.to(".box-right", { y: "-100%", duration: 0.2, stagger: { each: 0.1, from: "end" } }, "<");
+
+    // Animate the center boxes after left and right are done
+    tl.to(".box-center", { y: "-100%", duration: 0.2, stagger: { each: 0.1, from: "edges" } });
+
+    // Fade in the banner title after everything is done
+   tl.to(".char", {y: "0%", opacity: 1, duration: 0.2, stagger:{ each: 0.1, from: "random" , ease: "easeInOut"}});
+  }, { scope: container });
+
   return (
-    <div className={roboto_mono.className}>
-      <div className="relative h-[90vh]">
-        <div className="absolute  bg-dark h-[90vh] w-full filter opacity-[0.125] blur-[2px] grayscale-[0.9]">
-          <Image
-            src={bannerImage}
-            alt="banner-image"
-            className="object-cover h-[90vh] w-full"
-          />
-        </div>
-        <div className="h-full max-w-[1240px]  px-[20px] mx-auto flex flex-col justify-center items-center gap-5">
-          <div>
-            <h1 className="text-center text-3xl md:text-4xl lg:text-6xl drop-customShadow font-medium mb-6">
-              Hey, I&apos;m <span className="text-accent">Rashed!</span>
-            </h1>
-          </div>
-          <div className="text-xl md:text-2xl lg:text-3xl text-center w-full ">
-            <p>
-              Full Stack Web <span className="text-accent">Developer</span> Who
-              Enjoys Building <br className="hidden lg:block" />
-              <span className="text-accent">Fast And</span>
-              <br className="md:hidden" />
-              <span className="text-accent"> Accessible </span>
-              Digital Products.
-            </p>
-          </div>
-          <div className="mt-4 z-50">
-            <Link
-              href="#contact"
-              className="cursor-pointer text-darkLighter font-medium bg-accentRgb px-4 py-3 rounded-md shadow-customShadow hover:bg-accent hover:translate-x-1 transition-all ease-in-out"
-            >
-              Contact Me
-            </Link>
-          </div>
-        </div>
+    <div ref={container} className={roboto_mono.className}>
+      <div className='min-h-screen w-full text-content flex flex-col justify-center items-center relative z-10 gap-10'>
+        <h3 className="banner-title text-9xl flex justify-center items-center relative z-10 uppercase overflow-hidden">
+        {"Rashed".split("").map((char, index) => (
+          <span key={index} className="char inline-block opacity-0 translate-y-full">
+            {char}
+          </span>
+        ))}
+        </h3>
+        <h4 className="banner-subtitle uppercase ">
+        {"DEVELOPER".split("").map((char, index) => (
+          <span key={index} className="char inline-block opacity-0 translate-y-full text-3xl">
+            {char}
+          </span>
+        ))}
+          </h4>
+   
+          
       </div>
+      <div className='boxes inset-0 z-20 flex gap-[2px] h-screen fixed w-full pointer-events-none'>
+        <div className="box-left bg-white h-full w-full border"></div>
+        <div className="box-left bg-white h-full w-full border"></div>
+        <div className="box-left bg-white h-full w-full border"></div>
+        <div className="box-left bg-white h-full w-full border"></div>
+        <div className="box-center bg-white h-full w-full border"></div>
+        <div className="box-center bg-white h-full w-full border"></div>
+        <div className="box-center bg-white h-full w-full border"></div>
+        <div className="box-center bg-white h-full w-full border"></div>
+        <div className="box-center bg-white h-full w-full border"></div>
+        <div className="box-right bg-white h-full w-full border"></div>
+        <div className="box-right bg-white h-full w-full border"></div>
+        <div className="box-right bg-white h-full w-full border"></div>
+        <div className="box-right bg-white h-full w-full border"></div>
+      </div>
+
+      <ScrollIndicator/>
     </div>
   );
 };
