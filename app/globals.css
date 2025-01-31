@@ -14,7 +14,7 @@ html{
   width: 0;
   background: transparent; 
 }
-body{
+body {
   background-color: #000;
 }
 
@@ -85,4 +85,3 @@ position: relative;
 .nav-item:hover  {
   background-position-x: 0%;
 }
-

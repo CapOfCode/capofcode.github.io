@@ -2,8 +2,8 @@ import { AnimatedScrollMouse } from "../shared/AnimatedIcons";
 
 const Banner = () => {
   return (
-    <div id='home'>
-      <div className='min-h-screen bg-black w-full text-content flex flex-col justify-center items-center relative z-10 overflow-hidden pointer-events-none'>
+    <div id='home' className="min-h-screen">
+      <div className='min-h-screen fixed bg-black w-full text-content flex flex-col justify-center items-center z-10 overflow-hidden pointer-events-none'>
         <div className='overflow-hidden'>
           <h3 className="banner-title font-silk text-9xl flex justify-center items-center relative z-10 uppercase overflow-hidden text-white opacity-0 translate-y-full">
             Rashed
@@ -17,7 +17,7 @@ const Banner = () => {
         </div>
         <h2 className="based-text font-silk font-normal text-white absolute bottom-[30px] opacity-0">Based in Bangladesh</h2>
         <div className="scroll-indicator absolute left-[15px] bottom-[100px] opacity-0">
-        <AnimatedScrollMouse/>
+          <AnimatedScrollMouse />
         </div>
       </div>
     </div>
