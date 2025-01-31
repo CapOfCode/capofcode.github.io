@@ -4,12 +4,14 @@ import Contact from "@/components/contact/Contact";
 import Experiance from "@/components/experiance/Experiance";
 import Projects from "@/components/projects/Projects";
 import Menu from "@/components/shared/Menu";
-import CanvasCursor from "@/components/shared/CanvasCursor";
 import Skills from "@/components/skills/Skills";
+import Preloader from "@/components/shared/Preloader";
+import FluidCursor from "@/components/shared/FluidCursor";
 export default function Home() {
   return (
    <div>
-    <CanvasCursor/>
+    <Preloader/>
+    <FluidCursor/>
     <Menu/>
     <Banner/>
     <About/>
@@ -17,7 +19,6 @@ export default function Home() {
     <Skills/>
     <Experiance/>
     <Contact/>
-    {/* <MouseTrail/> */}
    </div>
   );
 }

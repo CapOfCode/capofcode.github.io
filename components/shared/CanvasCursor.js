@@ -3,7 +3,7 @@
 import useCanvasCursor from "@/hooks/useCanvasCursor";
 
 const CanvasCursor = () => {
-  useCanvasCursor();
-  return <canvas className="pointer-events-none fixed inset-0 z-10" id="canvas" />;
+  // useCanvasCursor();
+  return <canvas className="pointer-events-none fixed inset-0 z-10 opacity-0" id="canvas" />;
 };
 export default CanvasCursor;

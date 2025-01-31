@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/**********************************************/
+/****************GLOBAL STYELS ****************/
+/**********************************************/
+
 html{
   scroll-behavior: smooth;
 }
@@ -15,11 +19,59 @@ body{
 }
 
 
+/**********************************************/
+/****************SECTION STYLES ****************/
+/**********************************************/
+#home, #about, #contact, #experience, #projects, #skills{
+z-index: 20;
+position: relative;
+}
+
+/**********************************************/
+/****************PRELOADER ****************/
+/**********************************************/
+.boxes{
+  position: fixed;
+  z-index: 50;
+  background-color: black;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  gap: 2px;
+  pointer-events: none;
+}
+
+.boxes .box{
+  position: relative;
+  z-index: 50;
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;
+  pointer-events: none;
+}
+
+
+/**********************************************/
+/****************CUSTOM CURSOR****************/
+/**********************************************/
+.custom-cursor{
+  z-index: 21;
+}
+
+
+
+/**********************************************/
+/****************NAV ITEMS****************/
+/**********************************************/
+
+.navbar{
+  mix-blend-mode: difference;
+}
 
 
 .nav-item{
   will-change: background-color, color;
-  background: linear-gradient(to right, #F72C5B 50%, #ffffff 50%);
+  /* background: linear-gradient(to right, #F72C5B 50%, #fff 50%); */
   background-size: 200% 100%;
   background-position-x: 100%;
   color: transparent;
@@ -34,21 +86,3 @@ body{
   background-position-x: 0%;
 }
 
-
-.navbar{
-  mix-blend-mode: difference;
-
-}
-
-/* 
-.nav-text{
-  mix-blend-mode: difference;
-  color: white;
-  background-color: black;
-}
-.nav-text-copy{
-  mix-blend-mode: difference;
-  color: black;
-  background-color: white;
-
-} */

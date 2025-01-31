@@ -1,26 +1,9 @@
-"use client"
-import { useEffect, useRef } from 'react';
-import { createBannerAnimation } from '@/animation';
-import Image from 'next/image';
-import FluidCursor from '../shared/FluidCursor';
-
-
+import { AnimatedScrollMouse } from "../shared/AnimatedIcons";
 
 const Banner = () => {
-  const container = useRef();
-
-
-  useEffect(() => {
-    const timeline = createBannerAnimation();
-    timeline.play();
-  }, []);
-
   return (
-    <div id='home' ref={container}>
-
-      {/* BANNER CONTENT START  */}
+    <div id='home'>
       <div className='min-h-screen bg-black w-full text-content flex flex-col justify-center items-center relative z-10 overflow-hidden pointer-events-none'>
-
         <div className='overflow-hidden'>
           <h3 className="banner-title font-silk text-9xl flex justify-center items-center relative z-10 uppercase overflow-hidden text-white opacity-0 translate-y-full">
             Rashed
@@ -32,26 +15,11 @@ const Banner = () => {
             Full Stack Developer
           </h4>
         </div>
-
-
         <h2 className="based-text font-silk font-normal text-white absolute bottom-[30px] opacity-0">Based in Bangladesh</h2>
-
-
+        <div className="scroll-indicator absolute left-[15px] bottom-[100px] opacity-0">
+        <AnimatedScrollMouse/>
+        </div>
       </div>
-      {/* BANNER CONTENT END  */}
-
-      {/* PRELOAD BOXES */}
-      <div className='boxes inset-0 z-20 flex gap-[2px] h-screen fixed w-full pointer-events-none'>
-        {Array.from({ length: 11 }).map((_, i) => (
-          <div key={i} className="box bg-white h-full w-full border"></div>
-        ))}
-      </div>
-
-      <div className='scroll-indicator absolute left-0'>
-
-      </div>
-
-      <FluidCursor />
     </div>
   );
 };

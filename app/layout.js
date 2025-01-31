@@ -12,7 +12,7 @@ import {ReactLenis} from "@/utils/lenis"
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <ReactLenis root>
+      <ReactLenis root options={{ duration: 1.5, smoothWheel: true, multiplier: 2 }}>
 
       <body
         className={`${gist} ${gist_mono} ${slik}  antialiased`}
