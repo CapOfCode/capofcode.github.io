@@ -19,7 +19,7 @@ body{
 
 .nav-item{
   will-change: background-color, color;
-  background: linear-gradient(to right, #EBF400 50%, #ffffff 50%);
+  background: linear-gradient(to right, #F72C5B 50%, #ffffff 50%);
   background-size: 200% 100%;
   background-position-x: 100%;
   color: transparent;

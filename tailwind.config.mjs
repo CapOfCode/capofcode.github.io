@@ -11,6 +11,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily:{
+        gist: ['var(--font-geist-sans)'],
+        silk: ['var(--font-silkscreen)']
+      }
     },
   },
   plugins: [],
