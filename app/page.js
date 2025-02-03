@@ -7,9 +7,12 @@ import Menu from "@/components/shared/Menu";
 import Skills from "@/components/skills/Skills";
 import Preloader from "@/components/shared/Preloader";
 import FluidCursor from "@/components/shared/FluidCursor";
+import MobileMenu from "@/components/shared/MobileMenu";
+import MenuToggleButton from "@/components/shared/MenuToggleButton";
 export default function Home() {
   return (
    <div>
+    <MenuToggleButton/>
     <Preloader/>
     <FluidCursor/>
     <Menu/>
@@ -19,6 +22,8 @@ export default function Home() {
     <Projects/>
     <Experiance/>
     <Contact/>
+    <MobileMenu/>
+
    </div>
   );
 }

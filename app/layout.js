@@ -1,5 +1,5 @@
 
-import { gist, gist_mono, slik } from "@/utils/font";
+import { gist, gist_mono, jer } from "@/utils/font";
 import "./globals.css";
 import LenisProvider from "@/utils/lenis";
 
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <LenisProvider>
 
       <body
-        className={`${gist} ${gist_mono} ${slik}  antialiased`}
+        className={`${gist} ${gist_mono} ${jer}  antialiased`}
       >
         {children}
       </body>

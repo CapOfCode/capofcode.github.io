@@ -124,7 +124,7 @@ const Projects = () => {
                   <p
                     key={index}
                     ref={(el) => (projectsRef.current[index] = el)}
-                    className={`project-title font-silk text-4xl cursor-pointer transition-colors duration-300 ${
+                    className={`project-title font-jer text-4xl cursor-pointer transition-colors duration-300 ${
                       activeIndex === index ? "text-white" : "text-gray-400"
                     }`}
                     onClick={() => setActiveIndex(index)}

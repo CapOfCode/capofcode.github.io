@@ -3,6 +3,7 @@
 "use client"
 import React, { useState } from 'react'
 import { useLenis } from 'lenis/react'
+import HoverText from './HoverText';
 const Menu = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
   const sectionCount = 6;
@@ -29,7 +30,7 @@ const Menu = () => {
   });
   return (
     <div className='navbar menu fixed top-0 w-full z-30 flex justify-center items-center gap-10'>
-      <div className='nav-items flex font-silk items-center justify-between text-white text-xl uppercase pt-8 w-full px-[30px]'>
+      <div className='nav-items flex font-jer items-center justify-between text-white text-3xl tracking-wider uppercase pt-8 w-full px-[30px]'>
 
         <ul className='left flex gap-8 items-center'>
           {menus.map(
@@ -40,7 +41,12 @@ const Menu = () => {
                   backgroundPositionX: `${100 - sectionScrollPercentages[index].scrollInSection}%`,
                   backgroundImage: "linear-gradient(to right, #F72C5B 50%, #fff 50%)"
                 }}>
-                <a className='cursor-pointer' href={`${item.link}`}>{item.label}</a>
+
+                <a className='cursor-pointer' href={`${item.link}`}>
+                  <HoverText>
+                    {item.label}
+                  </HoverText>
+                </a>
               </li>
 
             )
@@ -55,7 +61,11 @@ const Menu = () => {
                   backgroundPositionX: `${100 - sectionScrollPercentages[index].scrollInSection}%`,
                   backgroundImage: "linear-gradient(to right, #F72C5B 50%, #fff 50%)"
                 }}>
-                <a className='cursor-pointer' href={`${item.link}`}>{item.label}</a>
+                <a className='cursor-pointer' href={`${item.link}`}>
+                  <HoverText>
+                    {item.label}
+                  </HoverText>
+                </a>
               </li>
 
             )
@@ -64,8 +74,7 @@ const Menu = () => {
 
 
           <span className='menu-divider w-[2px] bg-white h-0 flex opacity-0 mr-6 shrink-0'></span>
-
-          <button className='menu-icon flex h-6 w-full min-w-[25px] gap-1.5 items-center justify-center'>
+          <button className='menu-icon w-[40px] flex h-[40px] min-w-[25px] gap-1.5 items-center justify-center relative '>
             <span className='menu-line bg-white opacity-0 h-[20px] w-[2px] flex -translate-x-[26px]'></span>
             <span className='menu-line bg-white opacity-0 h-[20px] w-[2px] flex -translate-x-[34px]'></span>
             <span className='menu-line bg-white opacity-0 h-[20px] w-[2px] flex -translate-x-[42px]'></span>
@@ -78,3 +87,5 @@ const Menu = () => {
 }
 
 export default Menu
+
+

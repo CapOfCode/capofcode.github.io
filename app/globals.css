@@ -25,6 +25,8 @@ body {
 #home, #about, #contact, #experience, #projects, #skills{
 z-index: 20;
 position: relative;
+padding-inline: 30px;
+
 }
 
 /**********************************************/
@@ -81,10 +83,6 @@ position: relative;
   transition: all ease 1s;
   mix-blend-mode: difference;
 } 
-
-.nav-item:hover  {
-  background-position-x: 0%;
-}
 
 
 /********************************************************/

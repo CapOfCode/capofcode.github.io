@@ -13,7 +13,7 @@ export default {
       },
       fontFamily:{
         gist: ['var(--font-geist-sans)'],
-        silk: ['var(--font-silkscreen)']
+        jer: ['var(--font-jersey)']
       }
     },
   },
